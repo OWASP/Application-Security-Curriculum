@@ -11,6 +11,25 @@
     level3: ✓
     cwe:
     nist:
+    concepts:
+        -
+            concept: 'SSDLC'
+            terms:
+                - 'Secure SDLC'
+                - 'stages of development'
+            level: 5
+    actions:
+        -
+            action: 'verify the use'
+            level: 2
+            mapping: 
+                - 'SSDLC'
+        -
+            action: 'that addresses security'
+            level: 5
+            mapping: 
+                - 'SSDLC'
+    notes: 'The terms here are too broad and also impossible to successfully verify. What makes an SDLC secure needs to be defined and in what way this needs to address security needs to be made more clear. Should it be in this section?'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -23,6 +42,51 @@
     level3: ✓
     cwe: 1053
     nist:
+    concepts:
+        -
+            concept: 'Threat Modeling'
+            terms:
+                - 'threats'
+                - 'threat modeling'
+            level: 2
+        -
+            concept: 'System Design'
+            terms:
+                - 'design change'
+            level: 2
+        -
+            concept: 'Agile Development'
+            terms:
+                - 'sprint planning'
+            level: 2
+        -
+            concept: 'Waterfall Development'
+            terms:
+                - 'design change'
+            level: 2
+        -
+            concept: 'Security Controls'
+            terms:
+                - 'countermeasures'
+                - 'risk responses'
+            level: 5
+        -
+            concept: 'SSDLC'
+            terms:
+                - 'security testing'
+            level: 3
+    action:
+        -
+            action: 'verify the use'
+            level: 2
+            mappings:
+                - 'Threat Modelling'
+        - 
+            action: 'appropriate'
+            level: 5
+            mappings:
+                - 'Security Controls'
+    notes: 'There is a variance in levels of checking for the aspects of threat modelling listed here. Does this list of aspects cover enough of threat modelling? Should the requirement just mandate the use of a standard threat modelling framework?'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -35,6 +99,31 @@
     level3: ✓
     cwe: 1110
     nist:
+    concepts:
+        -
+            concept: 'Agile Development'
+            level: 2
+            terms:
+                - 'user stories'
+                - 'features'
+        -
+            concept: 'Security Requirements'
+            level: 2
+            terms:
+                - 'functional security constraints'
+    actions:
+        -
+            action: 'Verify that'
+            level: 2
+            mappings:
+                - 'Agile Development'
+        -
+            action: 'contain'
+            level: 2
+            terms:
+                - 'Security Requirements'
+
+    notes: 'This reads as an unreasonable requirement and should be re-written to cover only user stories that impact security (identified from 1.1.2 above). The core requirement is probably that security requirements/constraints defined in the threat modelling are carried through to the definition of the work item for the developer implementing the feature.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -47,6 +136,34 @@
     level3: ✓
     cwe: 1059
     nist:
+    concepts:
+        -
+            concept: 'System Architecture'
+            terms:
+                - 'documentation'
+                - 'components'
+                - 'data flows'
+            level: 2
+        -
+            concept: 'Threat Modelling'
+            terms:
+                - 'trust boundaries'
+                - 'justification'
+            level: 4
+    actions:
+        -
+            action: 'verify'
+            level: 2
+            mappings:
+                - 'System Architecture'
+                - 'Threat Modelling'
+        -
+            action: 'justification'
+            level: 4
+            mappings:
+                - 'Threat Modelling'
+
+    notes: 'Is this "verify the existence of" documentation or verify it all accurately maps to reality and that the trust boundaries and reasons for them make sense? Assuming the latter.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -59,6 +176,30 @@
     level3: ✓
     cwe: 1059
     nist:
+    concepts:
+        -
+            concept: 'System Architecture'
+            terms:
+                - 'high-level architecture'
+            level: 2
+        -
+            concept: 'Threat Modelling'
+            terms:
+                - 'security analysis'
+            level: 4
+    actions:
+        -
+            action: 'verify'
+            level: 2
+            mappings:
+                - 'System Architecture'
+                - 'Threat Modelling'
+        -
+            action: 'analysis'
+            level: 4
+            mappings:
+                - 'Threat Modelling'
+    notes: 'Very similar to 1.1.4 just broader in scope to cover overall security analysis/threat modelling output, not just trust boundaries. Could be combined'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -71,6 +212,19 @@
     level3: ✓
     cwe: 637
     nist:
+    concepts:
+        -
+            concept: 'Secure SDLC'
+            terms: 
+                - 'security controls'
+            level: 5
+    actions:
+        -
+            action: 'verify implementation of'
+            level: 5
+            mappings:
+                - 'Secure SDLC'
+    notes: 'Very broad. As 1.1.1, controls required for a SDLC to be secure must be defined to allow identfication of duplicate, missing, ineffective or insecure controls. Examples would make this section easier to evaluate'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -83,6 +237,22 @@
     level3: ✓
     cwe: 637
     nist:
+    concepts:
+        -
+            concept: 'Secure SDLC'
+            terms:
+                - 'secure coding checklist'
+                - 'security requirements'
+                - 'security guidelines'
+                - 'security policy'
+            level: 2
+    actions:
+        -
+            action: 'verify availability of'
+            level: 2
+            mappings:
+                - 'Secure SDLC'
+    notes: 'This requirement should stipulate that these documents are in active use and maintained as part of the SDLC. Merely being available is not enough. It also reads as only one of the listed documents is required.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -95,6 +265,39 @@
     level3: ✓
     cwe: 250
     nist:
+    concepts:
+        -
+            concept: 'System Architecture'
+            terms: 
+                - 'application components'
+                - 'services'
+                - 'servers'
+            level: 2
+        -
+            concept: 'Authentication'
+            terms: 
+                - 'operating system accounts'
+                - 'unique'
+                - 'low-privilege'
+            level: 4
+        -
+            concept: 'Authorization'
+            terms: 
+                - 'operating system accounts'
+                - 'low-privilege'
+            level: 4
+        -
+            concept: 'Least Privilege'
+            terms: 
+                - 'low-privilege'
+            level: 4
+    actions:
+        -
+            action: 'verify the use of'
+            level: 4
+            mappings:
+                - 'Least Privilege'
+    notes: 'Intent is to cover service accounts or roles, not user accounts. The "or" operator allows for high-privilege roles if they are unique, which violates the principal of least priviledge. Needs clarifying and to be brought into the 21st century.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -107,6 +310,45 @@
     level3: ✓
     cwe: 306
     nist:
+    concepts:
+        -
+            concept: 'System Architecture'
+            terms: 
+                - 'application components'
+                - 'APIs'
+                - 'middleware'
+                - 'data layers'
+            level: 4
+        -
+            concept: 'Networking'
+            terms: 
+                - 'communcations'
+            level: 2
+        -
+            concept: 'Authentication'
+            terms: 
+                - 'authenticated'
+            level: 4
+        -
+            concept: 'Authorization'
+            terms: 
+                - 'least necessary privileges'
+            level: 4
+        -
+            concept: 'Least Privilege'
+            terms: 
+                - 'least necessary privileges'
+            level: 4
+    actions:
+        -
+            action: 'verify that'
+            level: 4
+            mappings:
+                - 'System Architecture'
+                - 'Authentication'
+                - 'Authorization'
+                - 'Least Privilege'
+    notes: 'Shouldn't include authorization requirements in a requirement focused on strong identity for all comms. Be clear if the intent is to strongly authenticate communications over network sockets, including localhost. Be clear it is ALL comms.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -119,6 +361,49 @@
     level3: ✓
     cwe: 306
     nist:
+    concepts:
+        -
+            concept: 'Authentication'
+            terms:
+                - 'authentication mechanism'
+                - 'strong authentication'
+            level: 2
+        -
+            concept: 'Schneier Principle (Don''t Roll Your Own)'
+            terms:
+                - 'vetted authentication mechanism'
+                - 'know to be secure'
+            level: 2
+        -
+            concept: 'Logging'
+            terms:
+                - 'logging and monitoring'
+            level: 5
+        -
+            concept: 'Attacks'
+            terms:
+                - 'breaches'
+                - 'account abuse'
+            level: 2
+    actions:
+        -
+            action: 'verify that'
+            level: 2
+            mappings:
+                - 'Authentication'
+                - 'Schneier Principle (Don''t Roll Your Own)'
+        -
+            action: 'sufficient'
+            level: 5
+            mappings:
+                - 'Logging'
+        -
+            action: 'detect'
+            level: 2
+            mappings:
+                - 'Attacks'
+
+    notes: 'Too broad. Logging and monitoring is an operational security concern that could move to its own requirement. "Strong authentication" is undefined. As written, a system would fail this requirement if it was using mutual TLS in one part of the system and API keys for another.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -131,6 +416,33 @@
     level3: ✓
     cwe: 306
     nist:
+    concepts:
+        -
+            concept: 'Authentication'
+            terms: 
+                - 'authentication pathways'
+                - 'identity management'
+                - 'authentication security control'
+            level: 4
+       -
+            concept: 'Risk Management'
+            terms: 
+                - 'risk of the application'
+                - 'consistent'
+                - 'no weaker alternatives'
+            level: 4
+    actions:
+        -
+            action: 'verify that'
+            level: 4
+            mappings:
+                - 'Authentication'
+        -
+            action: 'implement consistent'
+            level: 4
+            mappings:
+                - 'Risk Management'
+    notes: 'Previous requirement stipulated a single authentication mechanism, this one allows multiple. As written, weak authentication security controls are allowed as long as they are consistently the weakest.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -143,6 +455,18 @@
     level3: ✓
     cwe: 602
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -155,6 +479,18 @@
     level3: ✓
     cwe: 284
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -167,6 +503,18 @@
     level3: ✓
     cwe: 272
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -179,6 +527,18 @@
     level3: ✓
     cwe: 284
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -191,6 +551,18 @@
     level3: ✓
     cwe: 275
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -203,6 +575,18 @@
     level3: ✓
     cwe: 1029
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -215,6 +599,18 @@
     level3: ✓
     cwe: 502
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -227,6 +623,18 @@
     level3: ✓
     cwe: 602
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -239,6 +647,18 @@
     level3: ✓
     cwe: 116
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -251,6 +671,18 @@
     level3: ✓
     cwe: 320
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -263,6 +695,18 @@
     level3: ✓
     cwe: 320
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -275,6 +719,18 @@
     level3: ✓
     cwe: 320
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -287,6 +743,18 @@
     level3: ✓
     cwe: 320
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -299,6 +767,18 @@
     level3: ✓
     cwe: 1009
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -311,6 +791,18 @@
     level3: ✓
     cwe:
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -323,6 +815,18 @@
     level3: ✓
     cwe:
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -335,6 +839,18 @@
     level3: ✓
     cwe:
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -347,6 +863,18 @@
     level3: ✓
     cwe: 319
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -359,6 +887,18 @@
     level3: ✓
     cwe: 295
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -371,6 +911,18 @@
     level3: ✓
     cwe: 284
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -383,6 +935,18 @@
     level3: ✓
     cwe: 1059
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -395,6 +959,18 @@
     level3: ✓
     cwe: 362
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -407,6 +983,18 @@
     level3: ✓
     cwe: 367
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -419,6 +1007,18 @@
     level3: ✓
     cwe: 552
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -431,6 +1031,18 @@
     level3: ✓
     cwe: 646
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -443,6 +1055,18 @@
     level3: ✓
     cwe: 923
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -455,6 +1079,18 @@
     level3: ✓
     cwe: 494
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -467,6 +1103,18 @@
     level3: ✓
     cwe: 1104
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -479,6 +1127,18 @@
     level3: ✓
     cwe:
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -491,6 +1151,18 @@
     level3: ✓
     cwe: 265
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -503,6 +1175,18 @@
     level3: ✓
     cwe: 477
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -515,6 +1199,18 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -527,6 +1223,18 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -539,6 +1247,18 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -551,6 +1271,18 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -563,6 +1295,18 @@
     level3: ✓
     cwe: 620
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -575,6 +1319,18 @@
     level3: ✓
     cwe: 620
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -587,6 +1343,18 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -599,6 +1367,18 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -611,6 +1391,18 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -623,6 +1415,18 @@
     level3: ✓
     cwe: 263
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -635,6 +1439,18 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -647,6 +1463,18 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -659,6 +1487,18 @@
     level3: ✓
     cwe: 307
     nist: 5.2.2 / 5.1.1.2 / 5.1.4.2 / 5.1.5.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -671,6 +1511,18 @@
     level3: ✓
     cwe: 304
     nist: 5.2.10
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -683,6 +1535,18 @@
     level3: ✓
     cwe: 620
     nist:
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -695,6 +1559,18 @@
     level3: ✓
     cwe: 308
     nist: 5.2.5
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -707,6 +1583,18 @@
     level3: ✓
     cwe: 319
     nist: 5.2.6
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -719,6 +1607,18 @@
     level3: ✓
     cwe: 308
     nist: 5.2.8
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -731,6 +1631,18 @@
     level3: ✓
     cwe: 308
     nist: 5.2.9
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -743,6 +1655,18 @@
     level3: ✓
     cwe: 330
     nist: 5.1.1.2 / A.3
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -755,6 +1679,18 @@
     level3: ✓
     cwe: 308
     nist: 6.1.3
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -767,6 +1703,18 @@
     level3: ✓
     cwe: 287
     nist: 6.1.4
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -779,6 +1727,18 @@
     level3: ✓
     cwe: 916
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -791,6 +1751,18 @@
     level3: ✓
     cwe: 916
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -803,6 +1775,18 @@
     level3: ✓
     cwe: 916
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -815,6 +1799,18 @@
     level3: ✓
     cwe: 916
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -827,6 +1823,18 @@
     level3: ✓
     cwe: 916
     nist: 5.1.1.2
+    concepts:
+        -
+            concept: ''
+            terms: ''
+            level: ''
+    actions:
+        -
+            action: ''
+            level: ''
+            mappings:
+                -
+    notes: ''
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
