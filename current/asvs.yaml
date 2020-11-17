@@ -659,16 +659,41 @@
     nist:
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Data Security'
+            terms: 
+                - 'input and output'
+                - 'handle and process data'
+                - 'type'
+                - 'content'
+            level: 5
+        -
+            concept: 'Compliance'
+            terms: 
+                - 'applicable laws'
+                - 'regulations'
+                - 'other policy compliance'
+            level: 5
+        -
+            concept: 'Application Development'
+            terms: 
+                - 'requirements'
+            level: 5
     actions:
         -
-            action: ''
-            level: ''
+            action: 'Verify that'
+            level: 2
             mappings:
-                -
-    notes: ''
+                - 'Data Security'
+                - 'Compliance'
+                - 'Application Development'
+        -
+            action: 'clearly define'
+            level: 5
+            mappings:
+                - 'Data Security'
+                - 'Compliance'
+                - 'Application Development'
+    notes: 'Suggest "documented requirements for data input and output exist and clearly define" for clarity'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
