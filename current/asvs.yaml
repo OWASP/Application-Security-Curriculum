@@ -1221,11 +1221,11 @@
             concept: 'Authentication'
             terms:
                 - 'user passwords'
-            level: 0
+            level: 2
     actions:
         -
             action: 'verify that'
-            level: 0
+            level: 2
             mappings:
                 - ''
     notes: 'Does this requirement expect the examiner to test every password or to ensure that the system allows passwords that meets this requirement?'
