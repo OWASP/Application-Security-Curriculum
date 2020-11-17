@@ -457,16 +457,33 @@
     nist:
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authorization'
+            terms: 
+                - 'trusted enforcement points'
+                - 'access control gateways'
+                - 'access controls'
+            level: 2
+        -
+            concept: 'Infrastructure'
+            terms: 
+                - 'servers'
+                - 'serverless functions'
+            level: 2
+        -
+            concept: 'Application Development'
+            terms: 
+                - 'client'
+            level: 2
+
     actions:
         -
-            action: ''
-            level: ''
+            action: 'Verify that'
+            level: 2
             mappings:
-                -
-    notes: ''
+                - 'Authorization'
+                - 'Infrastructure'
+                - 'Application Development'
+    notes: 'Second sentence is unusually worded. Suggest "Verify that access controls are not enforced in any client applications." or merge the two sentences together to one Verify statement that includes client and server side.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
