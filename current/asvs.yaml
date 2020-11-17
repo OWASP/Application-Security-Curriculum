@@ -519,7 +519,7 @@
             mappings:
                 - 'Authorization'
                 - 'Application Development'
-    notes: 'This is very subjective and "flexible enough" is undefined. Suggest breaking down to specifics for a more objective assessment e.g., ensure the access control solution supports: granting access to roles, not just users; enforcement of access control to data at row level as well as application actions, etc.'
+    notes: 'This is very subjective and "flexible enough" is undefined. Suggest breaking down to specifics for a more objective assessment e.g., ensure the access control solution supports: granting access to roles, not just users; enforcement of access control to data at row level as well as application actions, not requiring a code update to change, etc.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -534,16 +534,47 @@
     nist:
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authorization'
+            terms: 
+                - 'principle of least privilege'
+                - 'elevation of privilege'
+            level: 2
+        -
+            concept: 'Authentication'
+            terms: 
+                - 'spoofing'
+            level: 2
+        -
+            concept: 'Attack Types'
+            terms: 
+                - 'spoofing'
+                - 'elevation of privilege'
+            level: 2
+        -
+            concept: 'Application Development'
+            terms: 
+                - 'functions'
+                - 'data files'
+                - 'controllers'
+                - 'services'
+                - 'other resources'
+            level: 2
+        -
+            concept: 'HTTP'
+            terms: 
+                - 'URLs'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'Verify enforcement'
+            level: 2
             mappings:
-                -
-    notes: ''
+                - 'Authorization'
+                - 'Authentication'
+                - 'Application Developmen'
+                - 'Attack Types'
+                - 'HTTP'
+    notes: 'Second sentence is unnecessary and reduces the focus of the requirement. Spoofing more focused on weak authentication/identity, suggest moving to its own requirement. Also suggest moving elevation of privilege to its own requirement if mitigation against it can be clearly defined for authorization.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
