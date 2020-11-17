@@ -1292,7 +1292,7 @@
             level: 2
             mappings:
                 - 'Authentication'
-    notes: ''
+    notes: 'The reference here does not explain the reason it is considered acceptable to modify the user input by removing consecutive spaces.'
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -1307,15 +1307,20 @@
     nist: 5.1.1.2
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authentication'
+            terms:
+                - 'printable Unicode charater'
+                - 'neutral characters'
+                - 'spaces'
+                - 'Emojis'
+                - 'passwords'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'verify that'
+            level: 2
             mappings:
-                -
+                - 'Authentication'
     notes: ''
 -
     chapter_id: V2
