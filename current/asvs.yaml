@@ -1531,7 +1531,7 @@
                 - 'Cryptography'
                 - 'API'
                 - 'Breach'
-    notes: 'The requirement asks that the password is not used to check the breached status of itself, and it does specify '
+    notes: 'The requirement asks that the password is not used to check the breached status of itself, the intention is, I believe, that the password is never handed off in plain text to the remote service and should state that.'
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
