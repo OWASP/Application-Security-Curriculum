@@ -635,16 +635,35 @@
     nist:
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authorization'
+            terms: 
+                - 'feature-based access control'
+                - 'attribute-based access control'
+                - 'role'
+                - 'user'
+                - 'Permissions'
+            level: 2
+        -
+            concept: 'Application Development'
+            terms: 
+                - 'feature'
+                - 'data item'
+                - 'the code'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'Verify that'
+            level: 2
             mappings:
-                -
-    notes: ''
+                - 'Authorization'
+                - 'Application Development'
+        -
+            action: 'is used'
+            level: 2
+            mappings:
+                - 'Authorization'
+                - 'Application Development'
+    notes: 'The essence of this requirement seems to be that authorization checks consider the combination of all role/group/user level permissions assigned, NOT just a single role assignment. Suggest a rewording to make the requirement clearer.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
