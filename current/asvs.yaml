@@ -589,16 +589,38 @@
     nist:
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authorization'
+            terms: 
+                - 'access control mechanism'
+                - 'elevation of privilege'
+                - 'insecure alternative paths'
+            level: 2
+        -
+            concept: 'Data Security'
+            terms: 
+                - 'protected data'
+                - 'resources'
+            level: 2
+        -
+            concept: 'DRY'
+            terms: 
+                - 'copy and paste'
+            level: 2
+        -
+            concept: 'Application Development'
+            terms: 
+                - 'application'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'Verify the application uses'
+            level: 2
             mappings:
-                -
-    notes: ''
+                - 'Authorization'
+                - 'Application Development'
+                - 'Data Security'
+                - 'DRY'
+    notes: '"Well-vetted" could do with defining, perhaps as part of a glossary of terms to cover the whole standard. Detailed requirements could include: widely-used FOSS or independently audited commercial library, if internally developed then reviewed by someone not the original author, with comprehensive test coverage that explores edge cases, etc. Also suggest "insecure alternative REQUEST paths" to be clearer.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
