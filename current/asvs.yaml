@@ -1571,15 +1571,24 @@
     nist: 5.1.1.2
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authentication'
+            terms:
+                - 'password'
+                - 'password strength'
+                - 'users'
+            level: 2
+        -
+            concept: 'User Interface'
+            terms:
+                - 'strength meter'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'verify that'
+            level: 2
             mappings:
-                -
+                - 'Authentication'
+                - 'User Interface'
     notes: ''
 -
     chapter_id: V2
