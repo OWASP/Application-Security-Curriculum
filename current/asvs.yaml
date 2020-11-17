@@ -1221,13 +1221,14 @@
             concept: 'Authentication'
             terms:
                 - 'user passwords'
+                - 'characters in length'
             level: 2
     actions:
         -
             action: 'verify that'
             level: 2
             mappings:
-                - ''
+                - 'Authentication'
     notes: 'Does this requirement expect the examiner to test every password or to ensure that the system allows passwords that meets this requirement?'
 -
     chapter_id: V2
@@ -1243,16 +1244,17 @@
     nist: 5.1.1.2
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authentication'
+            terms:
+                - 'user passwords'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'verify that'
+            level: 2
             mappings:
-                -
-    notes: ''
+                - 'Authentication'
+    notes: 'The OWASP Proactive Controls C6 referenced has no mention of an upper limit of 128. Where does this requirement come from?'
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
