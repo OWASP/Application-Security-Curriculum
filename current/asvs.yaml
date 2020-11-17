@@ -757,16 +757,22 @@
     nist:
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Sanitization'
+            terms: 'input validation'
+            level: 2
+        -
+            concept: 'Application Development'
+            terms: 
+                - 'trusted service layer'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'Verify that input validation is enforced'
+            level: '2'
             mappings:
-                -
-    notes: ''
+                - 'Sanitization'
+                - 'input validation'
+    notes: 'This seems to be, like 1.4.1, focused on not performing security checks client-side in an environment where they can be easily bypassed. Suggest aligning the wording as "trusted service layer" is not clearly defined and have a consistent focus on either actions (controls not being able to be bypassed by users) or environment (controls being implemented and enforced in a trusted environment).'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
