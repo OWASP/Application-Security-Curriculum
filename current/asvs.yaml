@@ -474,7 +474,6 @@
             terms: 
                 - 'client'
             level: 2
-
     actions:
         -
             action: 'Verify that'
@@ -498,16 +497,29 @@
     nist:
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authorization'
+            terms: 
+                - 'access control solution'
+            level: 5
+        -
+            concept: 'Application Development'
+            terms: 
+                - 'application'
+            level: 5
     actions:
         -
-            action: ''
-            level: ''
+            action: 'Verify that'
+            level: 2
             mappings:
-                -
-    notes: ''
+                - 'Authorization'
+                - 'Application Development'
+        -
+            action: 'is flexible enough'
+            level: 5
+            mappings:
+                - 'Authorization'
+                - 'Application Development'
+    notes: 'This is very subjective and "flexible enough" is undefined. Suggest breaking down to specifics for a more objective assessment e.g., ensure the access control solution supports: granting access to roles, not just users; enforcement of access control to data at row level as well as application actions, etc.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
