@@ -1465,16 +1465,20 @@
     nist: 5.1.1.2
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authentication'
+            terms:
+                - 'password change'
+                - 'users'
+                - 'current password'
+                - 'new password'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'verify that'
+            level: 2
             mappings:
-                -
-    notes: ''
+                - 'Authentication'
+    notes: 'I would rephrase this requirement as `requires the user''s current password as well as the new one` as the latter is obvious and it would put more emphasis on needing the old password too.'
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -1489,16 +1493,45 @@
     nist: 5.1.1.2
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authentication'
+            terms:
+                - 'password'
+                - 'account registration'
+                - 'login'
+                - 'password change'
+                - 'common passwords'
+                - 'password policy'
+                - 'plain text'
+            level: 2
+        -
+            concept: 'Cryptography'
+            terms:
+                - 'zero knowledge proof'
+            level: 2
+        -
+            concept: 'API'
+            terms:
+                - 'locally'
+                - 'external API'
+                - 'API'
+            level: 2
+        -
+            concept: 'Breach'
+            terms:
+                - 'breached passwords'
+                - 'password is breached'
+                - 'non-breached'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'verify that'
+            level: 2
             mappings:
-                -
-    notes: ''
+                - 'Authentication'
+                - 'Cryptography'
+                - 'API'
+                - 'Breach'
+    notes: 'The requirement asks that the password is not used to check the breached status of itself, and it does specify '
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
