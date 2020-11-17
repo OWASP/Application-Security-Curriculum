@@ -708,15 +708,40 @@
     nist:
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Data Security'
+            terms: 
+                - 'serialization'
+                - 'deserialization'
+                - 'integrity controls'
+                - 'encryption'
+                - 'sensitive data'
+            level: 5
+        -
+            concept: 'Network Security'
+            terms: 
+                - 'communicating with untrusted clients'
+                - 'encryption'
+            level: 5
+        -
+            concept: 'Attack Types'
+            terms: 
+                - 'deserialization attacks'
+                - 'object injection'
+            level: 5
     actions:
         -
-            action: ''
-            level: ''
+            action: 'Verify that serialization is not used'
+            level: '2'
             mappings:
-                -
+                - 'Data Security'
+                - 'Network Security'
+        -
+            action: 'ensure that adequate'
+            level: '5'
+            mappings:
+                - 'Data Security'
+                - 'Network Security'
+                - 'Attack Types'
     notes: ''
 -
     chapter_id: V1
