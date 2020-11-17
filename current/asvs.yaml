@@ -1281,15 +1281,17 @@
     nist: 5.1.1.2
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authentication'
+            terms:
+                - 'password truncation'
+                - 'consecutive multiple spaces'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'verify that'
+            level: 2
             mappings:
-                -
+                - 'Authentication'
     notes: ''
 -
     chapter_id: V2
