@@ -1218,16 +1218,17 @@
     nist: 5.1.1.2
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authentication'
+            terms:
+                - 'user passwords'
+            level: 0
     actions:
         -
-            action: ''
-            level: ''
+            action: 'verify that'
+            level: 0
             mappings:
-                -
-    notes: ''
+                - ''
+    notes: 'Does this requirement expect the examiner to test every password or to ensure that the system allows passwords that meets this requirement?'
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
