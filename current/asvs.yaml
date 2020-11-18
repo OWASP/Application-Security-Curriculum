@@ -1642,7 +1642,7 @@
             level: 2
             mappings:
                 - 'Authentication'
-    notes: ''
+    notes: 'This requirement should end with "... for user set passwords.", requiring changes to machine passwords does not conflict with the NIST requirements.'
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
