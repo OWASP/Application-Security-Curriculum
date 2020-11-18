@@ -1689,15 +1689,25 @@
     nist: 5.1.1.2
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authentication'
+            terms:
+                - 'password'
+                - 'user'
+            level: 2
+        -
+            concerpt: 'User Interface'
+            terms:
+                - 'temporarily view'
+                - 'masked password'
+                - 'last typed character'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'verify that'
+            level: 2
             mappings:
-                -
+                - 'Authentication'
+                - 'User Interface'
     notes: ''
 -
     chapter_id: V2
