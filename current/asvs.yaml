@@ -470,6 +470,11 @@
                 - 'serverless functions'
             level: 2
         -
+            concept: 'Public Cloud'
+            terms: 
+                - 'serverless functions'
+            level: 2
+        -
             concept: 'Application Development'
             terms: 
                 - 'client'
@@ -482,6 +487,7 @@
                 - 'Authorization'
                 - 'Infrastructure'
                 - 'Application Development'
+                - 'Public Cloud'
     notes: 'Second sentence is unusually worded. Suggest "Verify that access controls are not enforced in any client applications." or merge the two sentences together to one Verify statement that includes client and server side.'
 -
     chapter_id: V1
@@ -502,6 +508,11 @@
                 - 'access control solution'
             level: 5
         -
+            concept: 'Authentication'
+            terms: 
+                - 'access control solution'
+            level: 5
+        -
             concept: 'Application Development'
             terms: 
                 - 'application'
@@ -512,12 +523,14 @@
             level: 2
             mappings:
                 - 'Authorization'
+                - 'Authentication'
                 - 'Application Development'
         -
             action: 'is flexible enough'
             level: 5
             mappings:
                 - 'Authorization'
+                - 'Authentication'
                 - 'Application Development'
     notes: 'This is very subjective and "flexible enough" is undefined. Suggest breaking down to specifics for a more objective assessment e.g., ensure the access control solution supports: granting access to roles, not just users; enforcement of access control to data at row level as well as application actions, not requiring a code update to change, etc.'
 -
@@ -557,7 +570,7 @@
                 - 'data files'
                 - 'controllers'
                 - 'services'
-                - 'other resources'
+                - 'resources'
             level: 2
         -
             concept: 'HTTP'
@@ -574,7 +587,7 @@
                 - 'Application Developmen'
                 - 'Attack Types'
                 - 'HTTP'
-    notes: 'Second sentence is unnecessary and reduces the focus of the requirement. Spoofing more focused on weak authentication/identity, suggest moving to its own requirement. Also suggest moving elevation of privilege to its own requirement if mitigation against it can be clearly defined for authorization.'
+    notes: 'Should specify that "enforcement" (implementation) of least privilege is in ALL aspects mentioned. "Other resources" is too vague and makes scope undefined. Second sentence is unnecessary and reduces the focus of the requirement. Spoofing more focused on weak authentication/identity, suggest moving to its own requirement. Also suggest moving elevation of privilege to its own requirement if mitigation against it can be clearly defined for authorization.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -592,8 +605,18 @@
             concept: 'Authorization'
             terms: 
                 - 'access control mechanism'
-                - 'elevation of privilege'
                 - 'insecure alternative paths'
+            level: 2
+        -
+            concept: 'Authentication'
+            terms: 
+                - 'access control mechanism'
+                - 'insecure alternative paths'
+            level: 2
+        -
+            concept: 'Attack Types'
+            terms:
+                - 'elevation of privilege'
             level: 2
         -
             concept: 'Data Security'
@@ -617,10 +640,11 @@
             level: 2
             mappings:
                 - 'Authorization'
+                - 'Authentication'
                 - 'Application Development'
                 - 'Data Security'
                 - 'DRY'
-    notes: '"Well-vetted" could do with defining, perhaps as part of a glossary of terms to cover the whole standard. Detailed requirements could include: widely-used FOSS or independently audited commercial library, if internally developed then reviewed by someone not the original author, with comprehensive test coverage that explores edge cases, etc. Also suggest "insecure alternative REQUEST paths" to be clearer.'
+    notes: '"Well-vetted" needs defining, perhaps as part of a glossary of terms to cover the whole standard. Detailed requirements could include: widely-used FOSS or independently audited commercial library, if internally developed then reviewed by someone not the original author, with comprehensive test coverage that explores edge cases, etc. Also suggest "insecure alternative REQUEST paths" to be clearer. Enforcing a "single" access control mechanism could rule out using, say, facebook and twitter auth in an app. This needs discussion.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -750,18 +774,18 @@
     actions:
         -
             action: 'Verify that serialization is not used'
-            level: '2'
+            level: 2
             mappings:
                 - 'Data Security'
                 - 'Network Security'
         -
             action: 'ensure that adequate'
-            level: '5'
+            level: 5
             mappings:
                 - 'Data Security'
                 - 'Network Security'
                 - 'Attack Types'
-    notes: ''
+    notes: 'We should define "adequate controls" for using serialization with untrusted client, most likely referring to separate guidance from OWASP.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -808,11 +832,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -832,11 +856,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -856,11 +880,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -880,11 +904,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -904,11 +928,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -928,11 +952,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -952,11 +976,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -976,11 +1000,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1000,11 +1024,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1024,11 +1048,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1048,11 +1072,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1072,11 +1096,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1096,11 +1120,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1120,11 +1144,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1144,11 +1168,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1168,11 +1192,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1192,11 +1216,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1216,11 +1240,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1240,11 +1264,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1264,11 +1288,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1288,11 +1312,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1312,11 +1336,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1336,11 +1360,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1571,6 +1595,7 @@
     nist: 5.1.1.2
     concepts:
         -
+<<<<<<< HEAD
             concept: 'Authentication'
             terms:
                 - 'password'
@@ -1586,6 +1611,15 @@
         -
             action: 'verify that'
             level: 2
+=======
+            concept: ''
+            terms: ''
+            level: 
+    actions:
+        -
+            action: ''
+            level: 
+>>>>>>> dd5daf4 (Changes from interactive review with @rewtd)
             mappings:
                 - 'Authentication'
                 - 'User Interface'
@@ -1604,6 +1638,7 @@
     nist: 5.1.1.2
     concepts:
         -
+<<<<<<< HEAD
             concept: 'Authentication'
             terms:
                 - 'password'
@@ -1614,6 +1649,15 @@
         -
             action: 'verify that'
             level: 2
+=======
+            concept: ''
+            terms: ''
+            level: 
+    actions:
+        -
+            action: ''
+            level: 
+>>>>>>> dd5daf4 (Changes from interactive review with @rewtd)
             mappings:
                 - 'Authentication'
     notes: ''
@@ -1631,6 +1675,7 @@
     nist: 5.1.1.2
     concepts:
         -
+<<<<<<< HEAD
             concept: 'Authentication'
             terms:
                 - 'credential rotation'
@@ -1640,6 +1685,15 @@
         -
             action: 'verify that'
             level: 2
+=======
+            concept: ''
+            terms: ''
+            level: 
+    actions:
+        -
+            action: ''
+            level: 
+>>>>>>> dd5daf4 (Changes from interactive review with @rewtd)
             mappings:
                 - 'Authentication'
     notes: 'This requirement should end with "... for user set passwords.", requiring changes to machine passwords does not conflict with the NIST requirements.'
@@ -1657,6 +1711,7 @@
     nist: 5.1.1.2
     concepts:
         -
+<<<<<<< HEAD
             concept: 'Authentication'
             terms:
                 - 'password helpers'
@@ -1671,6 +1726,15 @@
         -
             action: 'verify that'
             level: 2
+=======
+            concept: ''
+            terms: ''
+            level: 
+    actions:
+        -
+            action: ''
+            level: 
+>>>>>>> dd5daf4 (Changes from interactive review with @rewtd)
             mappings:
                 - 'Authentication'
                 - 'User Interface'
@@ -1689,6 +1753,7 @@
     nist: 5.1.1.2
     concepts:
         -
+<<<<<<< HEAD
             concept: 'Authentication'
             terms:
                 - 'password'
@@ -1705,6 +1770,15 @@
         -
             action: 'verify that'
             level: 2
+=======
+            concept: ''
+            terms: ''
+            level: 
+    actions:
+        -
+            action: ''
+            level: 
+>>>>>>> dd5daf4 (Changes from interactive review with @rewtd)
             mappings:
                 - 'Authentication'
                 - 'User Interface'
@@ -1725,11 +1799,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1749,11 +1823,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1773,11 +1847,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1797,11 +1871,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1821,11 +1895,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1845,11 +1919,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1869,11 +1943,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1893,11 +1967,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1917,11 +1991,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1941,11 +2015,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1965,11 +2039,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -1989,11 +2063,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -2013,11 +2087,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -2037,11 +2111,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
@@ -2061,11 +2135,11 @@
         -
             concept: ''
             terms: ''
-            level: ''
+            level: 
     actions:
         -
             action: ''
-            level: ''
+            level: 
             mappings:
                 -
     notes: ''
