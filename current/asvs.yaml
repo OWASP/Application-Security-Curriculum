@@ -1662,12 +1662,18 @@
                 - 'password helpers'
                 - 'external password managers'
             level: 2
+        -
+            concept: 'User Interface'
+            terms:
+                - '"paste" functionality'
+            level: 2
     actions:
         -
             action: 'verify that'
             level: 2
             mappings:
                 - 'Authentication'
+                - 'User Interface'
     notes: ''
 -
     chapter_id: V2
