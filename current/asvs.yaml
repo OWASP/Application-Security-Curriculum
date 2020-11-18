@@ -801,7 +801,8 @@
     concepts:
         -
             concept: 'Sanitization'
-            terms: 'input validation'
+            terms: 
+                - 'input validation'
             level: 2
         -
             concept: 'Application Development'
@@ -811,7 +812,7 @@
     actions:
         -
             action: 'Verify that input validation is enforced'
-            level: '2'
+            level: 2
             mappings:
                 - 'Sanitization'
                 - 'input validation'
@@ -1384,7 +1385,7 @@
         -
             concept: 'Authentication'
             terms:
-                - 'user passwords'
+                - 'user set passwords'
                 - 'characters in length'
             level: 2
     actions:
@@ -1393,7 +1394,7 @@
             level: 2
             mappings:
                 - 'Authentication'
-    notes: 'Does this requirement expect the examiner to test every password or to ensure that the system allows passwords that meets this requirement?'
+    notes: 'Does this requirement expect the examiner to test every password or to ensure that the system allows passwords that meets this requirement? Why are spaces treated differently from other characters? There is no rational reason to remove them from a security point of view, if the issue is one of UX then it belongs in that standard not here.'
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -1418,7 +1419,7 @@
             level: 2
             mappings:
                 - 'Authentication'
-    notes: 'The OWASP Proactive Controls C6 referenced has no mention of an upper limit of 128. Where does this requirement come from?'
+    notes: 'The OWASP Proactive Controls C6 referenced has no mention of an upper limit of 128. Where does this requirement come from? Can we align this with the updated NIST guidence (min 12 and at least 64 max).'
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -1473,7 +1474,7 @@
             level: 2
             mappings:
                 - 'Authentication'
-    notes: ''
+    notes: 'There are nearly 150k printable Unicode characters, perhaps some guidance on how this is testable on level 1?'
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -1499,7 +1500,7 @@
             level: 2
             mappings:
                 - 'Authentication'
-    notes: ''
+    notes: 'Suggest adding, "without divulging their plain text password".'
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -1580,7 +1581,7 @@
                 - 'Cryptography'
                 - 'API'
                 - 'Breach'
-    notes: 'The requirement asks that the password is not used to check the breached status of itself, the intention is, I believe, that the password is never handed off in plain text to the remote service and should state that.'
+    notes: 'The use of the word "should" must be replaced with "must" The requirement asks that the password is not used to check the breached status of itself, the intention is, I believe, that the password is never available in plain text to the remote service and should state that.'
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
