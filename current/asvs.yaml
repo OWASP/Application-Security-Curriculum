@@ -224,7 +224,7 @@
             level: 5
             mappings:
                 - 'Secure SDLC'
-    notes: 'Very broad. As 1.1.1, controls required for a SDLC to be secure must be defined to allow identfication of duplicate, missing, ineffective or insecure controls. Examples would make this section easier to evaluate'
+    notes: 'Very broad. As 1.1.1, controls required for a SDLC to be secure must be defined to allow identification of duplicate, missing, ineffective or insecure controls. Examples would make this section easier to evaluate'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -297,7 +297,7 @@
             level: 4
             mappings:
                 - 'Least Privilege'
-    notes: 'Intent is to cover service accounts or roles, not user accounts. The "or" operator allows for high-privilege roles if they are unique, which violates the principal of least priviledge. Needs clarifying and to be brought into the 21st century.'
+    notes: 'Intent is to cover service accounts or roles, not user accounts. The "or" operator allows for high-privilege roles if they are unique, which violates the principal of least privilege. Needs clarifying and to be brought into the 21st century.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -322,7 +322,7 @@
         -
             concept: 'Networking'
             terms: 
-                - 'communcations'
+                - 'communications'
             level: 2
         -
             concept: 'Authentication'
@@ -584,7 +584,7 @@
             mappings:
                 - 'Authorization'
                 - 'Authentication'
-                - 'Application Developmen'
+                - 'Application Development'
                 - 'Attack Types'
                 - 'HTTP'
     notes: 'Should specify that "enforcement" (implementation) of least privilege is in ALL aspects mentioned. "Other resources" is too vague and makes scope undefined. Second sentence is unnecessary and reduces the focus of the requirement. Spoofing more focused on weak authentication/identity, suggest moving to its own requirement. Also suggest moving elevation of privilege to its own requirement if mitigation against it can be clearly defined for authorization.'
@@ -1419,7 +1419,7 @@
             level: 2
             mappings:
                 - 'Authentication'
-    notes: 'The OWASP Proactive Controls C6 referenced has no mention of an upper limit of 128. Where does this requirement come from? Can we align this with the updated NIST guidence (min 12 and at least 64 max).'
+    notes: 'The OWASP Proactive Controls C6 referenced has no mention of an upper limit of 128. Where does this requirement come from? Can we align this with the updated NIST guidance (min 12 and at least 64 max).'
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -1462,7 +1462,7 @@
         -
             concept: 'Authentication'
             terms:
-                - 'printable Unicode charater'
+                - 'printable Unicode character'
                 - 'neutral characters'
                 - 'spaces'
                 - 'Emojis'
