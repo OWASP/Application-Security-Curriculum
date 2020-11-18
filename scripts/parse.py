@@ -6,13 +6,20 @@ import os
 import yaml
 
 
-def main(source_directory: str, single_source_file: str) -> None:
+def main(folder: str, single_source_file: str = None) -> None:
     # select source file to parse
     if single_source_file:
-        if
-        current_source = source_load(single_source_file)
+        csv_fileh = open(single_source_file, 'rb')
+        try:
+            dialect = csv.Sniffer().sniff(csv_fileh.read(1024))
+            if dialect.delimiter and dialect.lineterminator:
+                csv_fileh.seek(0)
+                current_source = singleCSV(single_source_file)
+        except csv.Error:
+            # File appears not to be in CSV format; move along
+            print("Not a valid CSV file.")
     else:
-        for discovered_source_file in os.scandir(source_directory):
+        for discovered_source_file in os.scandir(folder):
             current_source = source_load(discovered_source_file)
 
 
@@ -36,7 +43,7 @@ def singleCSV(csvFile, output=None):
 
 # takes a csvFile name and output file name/path
 def csvToYaml(csvFile, output):
-    stream = open(output, 'w',encoding="utf-8")
+    stream = open(output, 'w', encoding="utf-8")
     # https://stackoverflow.com/questions/18897029/read-csv-file-from-url-into-python-3-x-csv-error-iterator-should-return-str
     # need to decode bytes
     csvOpen = csv.reader(codecs.iterdecode(csvFile, 'utf-8'))

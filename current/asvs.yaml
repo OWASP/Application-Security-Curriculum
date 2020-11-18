@@ -1571,15 +1571,24 @@
     nist: 5.1.1.2
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authentication'
+            terms:
+                - 'password'
+                - 'password strength'
+                - 'users'
+            level: 2
+        -
+            concept: 'User Interface'
+            terms:
+                - 'strength meter'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'verify that'
+            level: 2
             mappings:
-                -
+                - 'Authentication'
+                - 'User Interface'
     notes: ''
 -
     chapter_id: V2
@@ -1595,15 +1604,18 @@
     nist: 5.1.1.2
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authentication'
+            terms:
+                - 'password'
+                - 'password composition'
+                - 'special characters'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'verify that'
+            level: 2
             mappings:
-                -
+                - 'Authentication'
     notes: ''
 -
     chapter_id: V2
@@ -1619,16 +1631,18 @@
     nist: 5.1.1.2
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authentication'
+            terms:
+                - 'credential rotation'
+                - 'password history'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'verify that'
+            level: 2
             mappings:
-                -
-    notes: ''
+                - 'Authentication'
+    notes: 'This requirement should end with "... for user set passwords.", requiring changes to machine passwords does not conflict with the NIST requirements.'
 -
     chapter_id: V2
     chapter_name: Authentication Verification Requirements
@@ -1643,15 +1657,23 @@
     nist: 5.1.1.2
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authentication'
+            terms:
+                - 'password helpers'
+                - 'external password managers'
+            level: 2
+        -
+            concept: 'User Interface'
+            terms:
+                - '"paste" functionality'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'verify that'
+            level: 2
             mappings:
-                -
+                - 'Authentication'
+                - 'User Interface'
     notes: ''
 -
     chapter_id: V2
@@ -1667,15 +1689,25 @@
     nist: 5.1.1.2
     concepts:
         -
-            concept: ''
-            terms: ''
-            level: ''
+            concept: 'Authentication'
+            terms:
+                - 'password'
+                - 'user'
+            level: 2
+        -
+            concerpt: 'User Interface'
+            terms:
+                - 'temporarily view'
+                - 'masked password'
+                - 'last typed character'
+            level: 2
     actions:
         -
-            action: ''
-            level: ''
+            action: 'verify that'
+            level: 2
             mappings:
-                -
+                - 'Authentication'
+                - 'User Interface'
     notes: ''
 -
     chapter_id: V2
@@ -4251,7 +4283,7 @@
     section_id: V13.2
     section_name: RESTful Web Service Verification Requirements
     req_id: V13.2.3
-    req_description: Verify that RESTful web services that utilize cookies are protected from Cross-Site Request Forgery via the use of at least one or more of the following: double submit cookie pattern, CSRF nonces, or Origin request header checks.
+    req_description: 'Verify that RESTful web services that utilize cookies are protected from Cross-Site Request Forgery via the use of at least one or more of the following: double submit cookie pattern, CSRF nonces, or Origin request header checks.'
     level1: ✓
     level2: ✓
     level3: ✓
@@ -4527,7 +4559,7 @@
     section_id: V14.4
     section_name: HTTP Security Headers Requirements
     req_id: V14.4.2
-    req_description: Verify that all API responses contain a Content-Disposition: attachment; filename="api.json" header (or other appropriate filename for the content type).
+    req_description: 'Verify that all API responses contain a Content-Disposition: attachment; filename="api.json" header (or other appropriate filename for the content type).'
     level1: ✓
     level2: ✓
     level3: ✓
@@ -4551,7 +4583,7 @@
     section_id: V14.4
     section_name: HTTP Security Headers Requirements
     req_id: V14.4.4
-    req_description: Verify that all responses contain a X-Content-Type-Options: nosniff header.
+    req_description: 'Verify that all responses contain a X-Content-Type-Options: nosniff header.'
     level1: ✓
     level2: ✓
     level3: ✓
@@ -4563,7 +4595,7 @@
     section_id: V14.4
     section_name: HTTP Security Headers Requirements
     req_id: V14.4.5
-    req_description: Verify that a Strict-Transport-Security header is included on all responses and for all subdomains, such as Strict-Transport-Security: max-age=15724800; includeSubdomains.
+    req_description: 'Verify that a Strict-Transport-Security header is included on all responses and for all subdomains, such as Strict-Transport-Security: max-age=15724800; includeSubdomains.'
     level1: ✓
     level2: ✓
     level3: ✓
@@ -4587,7 +4619,7 @@
     section_id: V14.4
     section_name: HTTP Security Headers Requirements
     req_id: V14.4.7
-    req_description: Verify that the content of a web application cannot be embedded in a third-party site by default and that embedding of the exact resources is only allowed where necessary by using suitable Content-Security-Policy: frame-ancestors and X-Frame-Options response headers.
+    req_description: 'Verify that the content of a web application cannot be embedded in a third-party site by default and that embedding of the exact resources is only allowed where necessary by using suitable Content-Security-Policy: frame-ancestors and X-Frame-Options response headers.'
     level1: ✓
     level2: ✓
     level3: ✓
