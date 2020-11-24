@@ -24,12 +24,12 @@
             action: 'verify the use'
             level: 2
             mapping: 
-                - 'SSDLC'
+                - 'Secure SDLC'
         -
             action: 'that addresses security'
             level: 5
             mapping: 
-                - 'SSDLC'
+                - 'Secure SDLC'
     notes: 'The terms here are too broad and also impossible to successfully verify. What makes an SDLC secure needs to be defined and in what way this needs to address security needs to be made more clear. Should it be in this section?'
 -
     chapter_id: V1
@@ -73,7 +73,7 @@
                 - 'risk responses'
             level: 5
         -
-            unit: 'SSDLC'
+            unit: 'Secure SDLC'
             terms:
                 - 'security testing'
             level: 3
@@ -82,13 +82,13 @@
             action: 'verify the use'
             level: 2
             mappings:
-                - 'Threat Modelling'
+                - 'Threat modeling'
         - 
             action: 'appropriate'
             level: 5
             mappings:
                 - 'Security Controls'
-    notes: 'There is a variance in levels of checking for the aspects of threat modelling listed here. Does this list of aspects cover enough of threat modelling? Should the requirement just mandate the use of a standard threat modelling framework?'
+    notes: 'There is a variance in levels of checking for the aspects of threat modeling listed here. Does this list of aspects cover enough of threat modeling? Should the requirement just mandate the use of a standard threat modeling framework?'
 -
     chapter_id: V1
     module: Designing a Secure System
@@ -126,7 +126,7 @@
             terms:
                 - 'Security Requirements'
 
-    notes: 'This reads as an unreasonable requirement and should be re-written to cover only user stories that impact security (identified from 1.1.2 above). The core requirement is probably that security requirements/constraints defined in the threat modelling are carried through to the definition of the work item for the developer implementing the feature.'
+    notes: 'This reads as an unreasonable requirement and should be re-written to cover only user stories that impact security (identified from 1.1.2 above). The core requirement is probably that security requirements/constraints defined in the threat modeling are carried through to the definition of the work item for the developer implementing the feature.'
 -
     chapter_id: V1
     module: Designing a Secure System
@@ -149,7 +149,7 @@
                 - 'data flows'
             level: 2
         -
-            unit: 'Threat Modelling'
+            unit: 'Threat modeling'
             terms:
                 - 'trust boundaries'
                 - 'justification'
@@ -160,12 +160,12 @@
             level: 2
             mappings:
                 - 'System Architecture'
-                - 'Threat Modelling'
+                - 'Threat modeling'
         -
             action: 'justification'
             level: 4
             mappings:
-                - 'Threat Modelling'
+                - 'Threat modeling'
 
     notes: 'Is this "verify the existence of" documentation or verify it all accurately maps to reality and that the trust boundaries and reasons for them make sense? Assuming the latter.'
 -
@@ -188,7 +188,7 @@
                 - 'high-level architecture'
             level: 2
         -
-            unit: 'Threat Modelling'
+            unit: 'Threat modeling'
             terms:
                 - 'security analysis'
             level: 4
@@ -198,13 +198,13 @@
             level: 2
             mappings:
                 - 'System Architecture'
-                - 'Threat Modelling'
+                - 'Threat modeling'
         -
             action: 'analysis'
             level: 4
             mappings:
-                - 'Threat Modelling'
-    notes: 'Very similar to 1.1.4 just broader in scope to cover overall security analysis/threat modelling output, not just trust boundaries. Could be combined'
+                - 'Threat modeling'
+    notes: 'Very similar to 1.1.4 just broader in scope to cover overall security analysis/threat modeling output, not just trust boundaries. Could be combined'
 -
     chapter_id: V1
     module: Designing a Secure System

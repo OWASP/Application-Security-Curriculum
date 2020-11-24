@@ -6,6 +6,7 @@ import yaml
 
 blooms = {1: 'Remember', 2: 'Understand', 3: 'Apply', 4: 'Analyze', 5: 'Evaluate', 6: 'Create'}
 
+
 def main(folder: str, single_source_file: str = None) -> None:
     # select source file to parse
     if single_source_file:
@@ -14,25 +15,35 @@ def main(folder: str, single_source_file: str = None) -> None:
         if data:
             curriculum = {}
             for requirement in data:
-                if 'concepts' in requirement:
-                    print("Requirement {} has concepts".format(requirement['req_id']))
-                    for concept in requirement['concepts']:
+                if requirement['module'] not in curriculum:
+                    print("New module found: {}, adding to curriculum".format(requirement['module']))
+                    curriculum[requirement['module']] = {}
+
+                module = curriculum[requirement['module']]
+
+                if 'units' in requirement:
+                    print("Requirement {} has units".format(requirement['req_id']))
+
+                    for unit in requirement['units']:
                         try:
-                            if concept['concept'] in curriculum:
-                                # add these terms to existing terms
-                                for term in concept['terms']:
-                                    print("Processing term: {}".format(term))
-                                    if term in curriculum[concept['concept']]:
-                                        print("Term is already present in concept")
-                                        if curriculum[concept['concept']][term] < concept['level']:
-                                            curriculum[concept['concept']][term] = concept['level']
-                                    else:
-                                        print("Term not present in concept")
-                                        curriculum[concept['concept']][term] = concept['level']
-                            else:
-                                # add concept and terms to curriculum
-                                print("New concept: {}".format(concept['concept']))
-                                curriculum[concept['concept']] = {term: concept['level'] for term in concept['terms']}
+                            if unit['unit']:
+                                if unit['unit'] in module:
+                                    print("Unit '{}' already in module '{}'".format(unit['unit'], requirement['module']))
+                                    existing_unit = module[unit['unit']]
+
+                                    # add these terms to existing terms for unit
+                                    for term in unit['terms']:
+                                        print("Processing term: {}".format(term))
+                                        if term in existing_unit:
+                                            print("Term is already present in unit, updating knowledge level if needed")
+                                            existing_unit[term] = max(existing_unit[term], unit['level'])
+                                        else:
+                                            print("Term not present in unit, adding")
+                                            existing_unit[term] = unit['level']
+                                else:
+                                    # add unit and terms to module
+                                    print("New unit: {}".format(unit['unit']))
+                                    module[unit['unit']] = {term: unit['level'] for term in unit['terms']}
                         except KeyError:
                             print("Requirement {} has a malformed concepts list".format(requirement['req_id']))
                 else:
@@ -43,6 +54,7 @@ def main(folder: str, single_source_file: str = None) -> None:
         for discovered_source_file in os.scandir(folder):
             current_source = source_load(discovered_source_file)
 
+
 def source_load(file_to_load: str) -> object:
     data = None
     with open(file_to_load, 'r') as stream:
@@ -52,6 +64,7 @@ def source_load(file_to_load: str) -> object:
             print(exc)
 
     return data
+
 
 if __name__ == "__main__":
     # get absolute path to this script for walking this repo
