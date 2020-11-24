@@ -13,7 +13,7 @@
     nist:
     concepts:
         -
-            concept: 'SSDLC'
+            concept: 'Secure SDLC'
             terms:
                 - 'Secure SDLC'
                 - 'stages of development'
@@ -348,7 +348,7 @@
                 - 'Authentication'
                 - 'Authorization'
                 - 'Least Privilege'
-    notes: 'Shouldn't include authorization requirements in a requirement focused on strong identity for all comms. Be clear if the intent is to strongly authenticate communications over network sockets, including localhost. Be clear it is ALL comms.'
+    notes: 'Shouldn''t include authorization requirements in a requirement focused on strong identity for all comms. Be clear if the intent is to strongly authenticate communications over network sockets, including localhost. Be clear it is ALL comms.'
 -
     chapter_id: V1
     chapter_name: Architecture, Design and Threat Modeling Requirements
@@ -424,7 +424,7 @@
                 - 'identity management'
                 - 'authentication security control'
             level: 4
-       -
+        -
             concept: 'Risk Management'
             terms: 
                 - 'risk of the application'
@@ -1720,7 +1720,7 @@
                 - 'user'
             level: 2
         -
-            concerpt: 'User Interface'
+            concept: 'User Interface'
             terms:
                 - 'temporarily view'
                 - 'masked password'
