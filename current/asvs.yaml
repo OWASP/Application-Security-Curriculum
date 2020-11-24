@@ -2945,7 +2945,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.1
     section_name: Input Validation Requirements
@@ -2958,7 +2958,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.1
     section_name: Input Validation Requirements
@@ -2971,7 +2971,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.1
     section_name: Input Validation Requirements
@@ -2984,7 +2984,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.1
     section_name: Input Validation Requirements
@@ -2997,7 +2997,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.1
     section_name: Input Validation Requirements
@@ -3010,7 +3010,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -3023,7 +3023,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -3036,7 +3036,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -3049,7 +3049,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -3062,7 +3062,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -3075,7 +3075,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -3088,7 +3088,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -3101,7 +3101,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -3114,7 +3114,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3127,7 +3127,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3140,7 +3140,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3153,7 +3153,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3166,7 +3166,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3179,7 +3179,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3192,7 +3192,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3205,7 +3205,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3218,7 +3218,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3231,7 +3231,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3244,7 +3244,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.4
     section_name: Memory, String, and Unmanaged Code Requirements
@@ -3257,7 +3257,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.4
     section_name: Memory, String, and Unmanaged Code Requirements
@@ -3270,7 +3270,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.4
     section_name: Memory, String, and Unmanaged Code Requirements
@@ -3283,7 +3283,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.5
     section_name: Deserialization Prevention Requirements
@@ -3296,7 +3296,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.5
     section_name: Deserialization Prevention Requirements
@@ -3309,7 +3309,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.5
     section_name: Deserialization Prevention Requirements
@@ -3322,7 +3322,7 @@
     nist:
 -
     chapter_id: V5
-    module: Data Security
+    module: Handling Input
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.5
     section_name: Deserialization Prevention Requirements
@@ -3712,7 +3712,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.1
     section_name: General Data Protection
@@ -3725,7 +3725,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.1
     section_name: General Data Protection
@@ -3738,7 +3738,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.1
     section_name: General Data Protection
@@ -3751,7 +3751,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.1
     section_name: General Data Protection
@@ -3764,7 +3764,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.1
     section_name: General Data Protection
@@ -3777,7 +3777,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.1
     section_name: General Data Protection
@@ -3790,7 +3790,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.2
     section_name: Client-side Data Protection
@@ -3803,7 +3803,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.2
     section_name: Client-side Data Protection
@@ -3816,7 +3816,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.2
     section_name: Client-side Data Protection
@@ -3829,7 +3829,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -3842,7 +3842,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -3855,7 +3855,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -3868,7 +3868,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -3881,7 +3881,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -3894,7 +3894,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -3907,7 +3907,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -3920,7 +3920,7 @@
     nist:
 -
     chapter_id: V8
-    module: Data Security
+    module: Securing Data at Rest
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -4271,7 +4271,7 @@
     nist:
 -
     chapter_id: V12
-    module: Data Security
+    module: Handling Files
     chapter_name: File and Resources Verification Requirements
     section_id: V12.1
     section_name: File Upload Requirements
@@ -4284,7 +4284,7 @@
     nist:
 -
     chapter_id: V12
-    module: Data Security
+    module: Handling Files
     chapter_name: File and Resources Verification Requirements
     section_id: V12.1
     section_name: File Upload Requirements
@@ -4297,7 +4297,7 @@
     nist:
 -
     chapter_id: V12
-    module: Data Security
+    module: Handling Files
     chapter_name: File and Resources Verification Requirements
     section_id: V12.1
     section_name: File Upload Requirements
@@ -4310,7 +4310,7 @@
     nist:
 -
     chapter_id: V12
-    module: Data Security
+    module: Handling Files
     chapter_name: File and Resources Verification Requirements
     section_id: V12.2
     section_name: File Integrity Requirements
@@ -4323,7 +4323,7 @@
     nist:
 -
     chapter_id: V12
-    module: Data Security
+    module: Handling Files
     chapter_name: File and Resources Verification Requirements
     section_id: V12.3
     section_name: File Execution Requirements
@@ -4336,7 +4336,7 @@
     nist:
 -
     chapter_id: V12
-    module: Data Security
+    module: Handling Files
     chapter_name: File and Resources Verification Requirements
     section_id: V12.3
     section_name: File Execution Requirements
@@ -4349,7 +4349,7 @@
     nist:
 -
     chapter_id: V12
-    module: Data Security
+    module: Handling Files
     chapter_name: File and Resources Verification Requirements
     section_id: V12.3
     section_name: File Execution Requirements
@@ -4362,7 +4362,7 @@
     nist:
 -
     chapter_id: V12
-    module: Data Security
+    module: Handling Files
     chapter_name: File and Resources Verification Requirements
     section_id: V12.3
     section_name: File Execution Requirements
@@ -4375,7 +4375,7 @@
     nist:
 -
     chapter_id: V12
-    module: Data Security
+    module: Handling Files
     chapter_name: File and Resources Verification Requirements
     section_id: V12.3
     section_name: File Execution Requirements
@@ -4388,7 +4388,7 @@
     nist:
 -
     chapter_id: V12
-    module: Data Security
+    module: Handling Files
     chapter_name: File and Resources Verification Requirements
     section_id: V12.3
     section_name: File Execution Requirements
@@ -4401,7 +4401,7 @@
     nist:
 -
     chapter_id: V12
-    module: Data Security
+    module: Handling Files
     chapter_name: File and Resources Verification Requirements
     section_id: V12.4
     section_name: File Storage Requirements
@@ -4414,7 +4414,7 @@
     nist:
 -
     chapter_id: V12
-    module: Data Security
+    module: Handling Files
     chapter_name: File and Resources Verification Requirements
     section_id: V12.4
     section_name: File Storage Requirements
@@ -4427,7 +4427,7 @@
     nist:
 -
     chapter_id: V12
-    module: Data Security
+    module: Handling Files
     chapter_name: File and Resources Verification Requirements
     section_id: V12.5
     section_name: File Download Requirements
@@ -4440,7 +4440,7 @@
     nist:
 -
     chapter_id: V12
-    module: Data Security
+    module: Handling Files
     chapter_name: File and Resources Verification Requirements
     section_id: V12.5
     section_name: File Download Requirements
@@ -4453,7 +4453,7 @@
     nist:
 -
     chapter_id: V12
-    module: Data Security
+    module: Handling Files
     chapter_name: File and Resources Verification Requirements
     section_id: V12.6
     section_name: SSRF Protection Requirements
