@@ -1,6 +1,7 @@
 ---
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.1
     section_name: Secure Software Development Lifecycle Requirements
@@ -11,9 +12,9 @@
     level3: ✓
     cwe:
     nist:
-    concepts:
+    units:
         -
-            concept: 'Secure SDLC'
+            unit: 'Secure SDLC'
             terms:
                 - 'Secure SDLC'
                 - 'stages of development'
@@ -32,6 +33,7 @@
     notes: 'The terms here are too broad and also impossible to successfully verify. What makes an SDLC secure needs to be defined and in what way this needs to address security needs to be made more clear. Should it be in this section?'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.1
     section_name: Secure Software Development Lifecycle Requirements
@@ -42,36 +44,36 @@
     level3: ✓
     cwe: 1053
     nist:
-    concepts:
+    units:
         -
-            concept: 'Threat Modeling'
+            unit: 'Threat Modeling'
             terms:
                 - 'threats'
                 - 'threat modeling'
             level: 2
         -
-            concept: 'System Design'
+            unit: 'System Design'
             terms:
                 - 'design change'
             level: 2
         -
-            concept: 'Agile Development'
+            unit: 'Agile Development'
             terms:
                 - 'sprint planning'
             level: 2
         -
-            concept: 'Waterfall Development'
+            unit: 'Waterfall Development'
             terms:
                 - 'design change'
             level: 2
         -
-            concept: 'Security Controls'
+            unit: 'Security Controls'
             terms:
                 - 'countermeasures'
                 - 'risk responses'
             level: 5
         -
-            concept: 'SSDLC'
+            unit: 'SSDLC'
             terms:
                 - 'security testing'
             level: 3
@@ -89,6 +91,7 @@
     notes: 'There is a variance in levels of checking for the aspects of threat modelling listed here. Does this list of aspects cover enough of threat modelling? Should the requirement just mandate the use of a standard threat modelling framework?'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.1
     section_name: Secure Software Development Lifecycle Requirements
@@ -99,15 +102,15 @@
     level3: ✓
     cwe: 1110
     nist:
-    concepts:
+    units:
         -
-            concept: 'Agile Development'
+            unit: 'Agile Development'
             level: 2
             terms:
                 - 'user stories'
                 - 'features'
         -
-            concept: 'Security Requirements'
+            unit: 'Security Requirements'
             level: 2
             terms:
                 - 'functional security constraints'
@@ -126,6 +129,7 @@
     notes: 'This reads as an unreasonable requirement and should be re-written to cover only user stories that impact security (identified from 1.1.2 above). The core requirement is probably that security requirements/constraints defined in the threat modelling are carried through to the definition of the work item for the developer implementing the feature.'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.1
     section_name: Secure Software Development Lifecycle Requirements
@@ -136,16 +140,16 @@
     level3: ✓
     cwe: 1059
     nist:
-    concepts:
+    units:
         -
-            concept: 'System Architecture'
+            unit: 'System Architecture'
             terms:
                 - 'documentation'
                 - 'components'
                 - 'data flows'
             level: 2
         -
-            concept: 'Threat Modelling'
+            unit: 'Threat Modelling'
             terms:
                 - 'trust boundaries'
                 - 'justification'
@@ -166,6 +170,7 @@
     notes: 'Is this "verify the existence of" documentation or verify it all accurately maps to reality and that the trust boundaries and reasons for them make sense? Assuming the latter.'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.1
     section_name: Secure Software Development Lifecycle Requirements
@@ -176,14 +181,14 @@
     level3: ✓
     cwe: 1059
     nist:
-    concepts:
+    units:
         -
-            concept: 'System Architecture'
+            unit: 'System Architecture'
             terms:
                 - 'high-level architecture'
             level: 2
         -
-            concept: 'Threat Modelling'
+            unit: 'Threat Modelling'
             terms:
                 - 'security analysis'
             level: 4
@@ -202,6 +207,7 @@
     notes: 'Very similar to 1.1.4 just broader in scope to cover overall security analysis/threat modelling output, not just trust boundaries. Could be combined'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.1
     section_name: Secure Software Development Lifecycle Requirements
@@ -212,9 +218,9 @@
     level3: ✓
     cwe: 637
     nist:
-    concepts:
+    units:
         -
-            concept: 'Secure SDLC'
+            unit: 'Secure SDLC'
             terms: 
                 - 'security controls'
             level: 5
@@ -227,6 +233,7 @@
     notes: 'Very broad. As 1.1.1, controls required for a SDLC to be secure must be defined to allow identification of duplicate, missing, ineffective or insecure controls. Examples would make this section easier to evaluate'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.1
     section_name: Secure Software Development Lifecycle Requirements
@@ -237,9 +244,9 @@
     level3: ✓
     cwe: 637
     nist:
-    concepts:
+    units:
         -
-            concept: 'Secure SDLC'
+            unit: 'Secure SDLC'
             terms:
                 - 'secure coding checklist'
                 - 'security requirements'
@@ -255,6 +262,7 @@
     notes: 'This requirement should stipulate that these documents are in active use and maintained as part of the SDLC. Merely being available is not enough. It also reads as only one of the listed documents is required.'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.2
     section_name: Authentication Architectural Requirements
@@ -265,29 +273,29 @@
     level3: ✓
     cwe: 250
     nist:
-    concepts:
+    units:
         -
-            concept: 'System Architecture'
+            unit: 'System Architecture'
             terms: 
                 - 'application components'
                 - 'services'
                 - 'servers'
             level: 2
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms: 
                 - 'operating system accounts'
                 - 'unique'
                 - 'low-privilege'
             level: 4
         -
-            concept: 'Authorization'
+            unit: 'Authorization'
             terms: 
                 - 'operating system accounts'
                 - 'low-privilege'
             level: 4
         -
-            concept: 'Least Privilege'
+            unit: 'Least Privilege'
             terms: 
                 - 'low-privilege'
             level: 4
@@ -300,6 +308,7 @@
     notes: 'Intent is to cover service accounts or roles, not user accounts. The "or" operator allows for high-privilege roles if they are unique, which violates the principal of least privilege. Needs clarifying and to be brought into the 21st century.'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.2
     section_name: Authentication Architectural Requirements
@@ -310,9 +319,9 @@
     level3: ✓
     cwe: 306
     nist:
-    concepts:
+    units:
         -
-            concept: 'System Architecture'
+            unit: 'System Architecture'
             terms: 
                 - 'application components'
                 - 'APIs'
@@ -320,22 +329,22 @@
                 - 'data layers'
             level: 4
         -
-            concept: 'Networking'
+            unit: 'Networking'
             terms: 
                 - 'communications'
             level: 2
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms: 
                 - 'authenticated'
             level: 4
         -
-            concept: 'Authorization'
+            unit: 'Authorization'
             terms: 
                 - 'least necessary privileges'
             level: 4
         -
-            concept: 'Least Privilege'
+            unit: 'Least Privilege'
             terms: 
                 - 'least necessary privileges'
             level: 4
@@ -351,6 +360,7 @@
     notes: 'Shouldn''t include authorization requirements in a requirement focused on strong identity for all comms. Be clear if the intent is to strongly authenticate communications over network sockets, including localhost. Be clear it is ALL comms.'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.2
     section_name: Authentication Architectural Requirements
@@ -361,26 +371,26 @@
     level3: ✓
     cwe: 306
     nist:
-    concepts:
+    units:
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms:
                 - 'authentication mechanism'
                 - 'strong authentication'
             level: 2
         -
-            concept: 'Schneier Principle (Don''t Roll Your Own)'
+            unit: 'Schneier Principle (Don''t Roll Your Own)'
             terms:
                 - 'vetted authentication mechanism'
                 - 'know to be secure'
             level: 2
         -
-            concept: 'Logging'
+            unit: 'Logging'
             terms:
                 - 'logging and monitoring'
             level: 5
         -
-            concept: 'Attacks'
+            unit: 'Attacks'
             terms:
                 - 'breaches'
                 - 'account abuse'
@@ -406,6 +416,7 @@
     notes: 'Too broad. Logging and monitoring is an operational security concern that could move to its own requirement. "Strong authentication" is undefined. As written, a system would fail this requirement if it was using mutual TLS in one part of the system and API keys for another.'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.2
     section_name: Authentication Architectural Requirements
@@ -416,16 +427,16 @@
     level3: ✓
     cwe: 306
     nist:
-    concepts:
+    units:
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms: 
                 - 'authentication pathways'
                 - 'identity management'
                 - 'authentication security control'
             level: 4
         -
-            concept: 'Risk Management'
+            unit: 'Risk Management'
             terms: 
                 - 'risk of the application'
                 - 'consistent'
@@ -445,6 +456,7 @@
     notes: 'Previous requirement stipulated a single authentication mechanism, this one allows multiple. As written, weak authentication security controls are allowed as long as they are consistently the weakest.'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.4
     section_name: Access Control Architectural Requirements
@@ -455,27 +467,27 @@
     level3: ✓
     cwe: 602
     nist:
-    concepts:
+    units:
         -
-            concept: 'Authorization'
+            unit: 'Authorization'
             terms: 
                 - 'trusted enforcement points'
                 - 'access control gateways'
                 - 'access controls'
             level: 2
         -
-            concept: 'Infrastructure'
+            unit: 'Infrastructure'
             terms: 
                 - 'servers'
                 - 'serverless functions'
             level: 2
         -
-            concept: 'Public Cloud'
+            unit: 'Public Cloud'
             terms: 
                 - 'serverless functions'
             level: 2
         -
-            concept: 'Application Development'
+            unit: 'Application Development'
             terms: 
                 - 'client'
             level: 2
@@ -491,6 +503,7 @@
     notes: 'Second sentence is unusually worded. Suggest "Verify that access controls are not enforced in any client applications." or merge the two sentences together to one Verify statement that includes client and server side.'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.4
     section_name: Access Control Architectural Requirements
@@ -501,19 +514,19 @@
     level3: ✓
     cwe: 284
     nist:
-    concepts:
+    units:
         -
-            concept: 'Authorization'
+            unit: 'Authorization'
             terms: 
                 - 'access control solution'
             level: 5
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms: 
                 - 'access control solution'
             level: 5
         -
-            concept: 'Application Development'
+            unit: 'Application Development'
             terms: 
                 - 'application'
             level: 5
@@ -535,6 +548,7 @@
     notes: 'This is very subjective and "flexible enough" is undefined. Suggest breaking down to specifics for a more objective assessment e.g., ensure the access control solution supports: granting access to roles, not just users; enforcement of access control to data at row level as well as application actions, not requiring a code update to change, etc.'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.4
     section_name: Access Control Architectural Requirements
@@ -545,26 +559,26 @@
     level3: ✓
     cwe: 272
     nist:
-    concepts:
+    units:
         -
-            concept: 'Authorization'
+            unit: 'Authorization'
             terms: 
                 - 'principle of least privilege'
                 - 'elevation of privilege'
             level: 2
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms: 
                 - 'spoofing'
             level: 2
         -
-            concept: 'Attack Types'
+            unit: 'Attack Types'
             terms: 
                 - 'spoofing'
                 - 'elevation of privilege'
             level: 2
         -
-            concept: 'Application Development'
+            unit: 'Application Development'
             terms: 
                 - 'functions'
                 - 'data files'
@@ -573,7 +587,7 @@
                 - 'resources'
             level: 2
         -
-            concept: 'HTTP'
+            unit: 'HTTP'
             terms: 
                 - 'URLs'
             level: 2
@@ -590,6 +604,7 @@
     notes: 'Should specify that "enforcement" (implementation) of least privilege is in ALL aspects mentioned. "Other resources" is too vague and makes scope undefined. Second sentence is unnecessary and reduces the focus of the requirement. Spoofing more focused on weak authentication/identity, suggest moving to its own requirement. Also suggest moving elevation of privilege to its own requirement if mitigation against it can be clearly defined for authorization.'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.4
     section_name: Access Control Architectural Requirements
@@ -600,37 +615,37 @@
     level3: ✓
     cwe: 284
     nist:
-    concepts:
+    units:
         -
-            concept: 'Authorization'
+            unit: 'Authorization'
             terms: 
                 - 'access control mechanism'
                 - 'insecure alternative paths'
             level: 2
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms: 
                 - 'access control mechanism'
                 - 'insecure alternative paths'
             level: 2
         -
-            concept: 'Attack Types'
+            unit: 'Attack Types'
             terms:
                 - 'elevation of privilege'
             level: 2
         -
-            concept: 'Data Security'
+            unit: 'Data Security'
             terms: 
                 - 'protected data'
                 - 'resources'
             level: 2
         -
-            concept: 'DRY'
+            unit: 'DRY'
             terms: 
                 - 'copy and paste'
             level: 2
         -
-            concept: 'Application Development'
+            unit: 'Application Development'
             terms: 
                 - 'application'
             level: 2
@@ -647,6 +662,7 @@
     notes: '"Well-vetted" needs defining, perhaps as part of a glossary of terms to cover the whole standard. Detailed requirements could include: widely-used FOSS or independently audited commercial library, if internally developed then reviewed by someone not the original author, with comprehensive test coverage that explores edge cases, etc. Also suggest "insecure alternative REQUEST paths" to be clearer. Enforcing a "single" access control mechanism could rule out using, say, facebook and twitter auth in an app. This needs discussion.'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.4
     section_name: Access Control Architectural Requirements
@@ -657,9 +673,9 @@
     level3: ✓
     cwe: 275
     nist:
-    concepts:
+    units:
         -
-            concept: 'Authorization'
+            unit: 'Authorization'
             terms: 
                 - 'feature-based access control'
                 - 'attribute-based access control'
@@ -668,7 +684,7 @@
                 - 'Permissions'
             level: 2
         -
-            concept: 'Application Development'
+            unit: 'Application Development'
             terms: 
                 - 'feature'
                 - 'data item'
@@ -690,6 +706,7 @@
     notes: 'The essence of this requirement seems to be that authorization checks consider the combination of all role/group/user level permissions assigned, NOT just a single role assignment. Suggest a rewording to make the requirement clearer.'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.5
     section_name: Input and Output Architectural Requirements
@@ -700,9 +717,9 @@
     level3: ✓
     cwe: 1029
     nist:
-    concepts:
+    units:
         -
-            concept: 'Data Security'
+            unit: 'Data Security'
             terms: 
                 - 'input and output'
                 - 'handle and process data'
@@ -710,14 +727,14 @@
                 - 'content'
             level: 5
         -
-            concept: 'Compliance'
+            unit: 'Compliance'
             terms: 
                 - 'applicable laws'
                 - 'regulations'
                 - 'other policy compliance'
             level: 5
         -
-            concept: 'Application Development'
+            unit: 'Application Development'
             terms: 
                 - 'requirements'
             level: 5
@@ -739,6 +756,7 @@
     notes: 'Suggest "documented requirements for data input and output exist and clearly define" for clarity'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.5
     section_name: Input and Output Architectural Requirements
@@ -749,9 +767,9 @@
     level3: ✓
     cwe: 502
     nist:
-    concepts:
+    units:
         -
-            concept: 'Data Security'
+            unit: 'Data Security'
             terms: 
                 - 'serialization'
                 - 'deserialization'
@@ -760,13 +778,13 @@
                 - 'sensitive data'
             level: 5
         -
-            concept: 'Network Security'
+            unit: 'Network Security'
             terms: 
                 - 'communicating with untrusted clients'
                 - 'encryption'
             level: 5
         -
-            concept: 'Attack Types'
+            unit: 'Attack Types'
             terms: 
                 - 'deserialization attacks'
                 - 'object injection'
@@ -788,6 +806,7 @@
     notes: 'We should define "adequate controls" for using serialization with untrusted client, most likely referring to separate guidance from OWASP.'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.5
     section_name: Input and Output Architectural Requirements
@@ -798,14 +817,14 @@
     level3: ✓
     cwe: 602
     nist:
-    concepts:
+    units:
         -
-            concept: 'Sanitization'
+            unit: 'Sanitization'
             terms: 
                 - 'input validation'
             level: 2
         -
-            concept: 'Application Development'
+            unit: 'Application Development'
             terms: 
                 - 'trusted service layer'
             level: 2
@@ -819,6 +838,7 @@
     notes: 'This seems to be, like 1.4.1, focused on not performing security checks client-side in an environment where they can be easily bypassed. Suggest aligning the wording as "trusted service layer" is not clearly defined and have a consistent focus on either actions (controls not being able to be bypassed by users) or environment (controls being implemented and enforced in a trusted environment).'
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.5
     section_name: Input and Output Architectural Requirements
@@ -829,9 +849,9 @@
     level3: ✓
     cwe: 116
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -843,6 +863,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.6
     section_name: Cryptographic Architectural Requirements
@@ -853,9 +874,9 @@
     level3: ✓
     cwe: 320
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -867,6 +888,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.6
     section_name: Cryptographic Architectural Requirements
@@ -877,9 +899,9 @@
     level3: ✓
     cwe: 320
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -891,6 +913,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.6
     section_name: Cryptographic Architectural Requirements
@@ -901,9 +924,9 @@
     level3: ✓
     cwe: 320
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -915,6 +938,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.6
     section_name: Cryptographic Architectural Requirements
@@ -925,9 +949,9 @@
     level3: ✓
     cwe: 320
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -939,6 +963,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.7
     section_name: Errors, Logging and Auditing Architectural Requirements
@@ -949,9 +974,9 @@
     level3: ✓
     cwe: 1009
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -963,6 +988,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.7
     section_name: Errors, Logging and Auditing Architectural Requirements
@@ -973,9 +999,9 @@
     level3: ✓
     cwe:
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -987,6 +1013,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.8
     section_name: Data Protection and Privacy Architectural Requirements
@@ -997,9 +1024,9 @@
     level3: ✓
     cwe:
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1011,6 +1038,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.8
     section_name: Data Protection and Privacy Architectural Requirements
@@ -1021,9 +1049,9 @@
     level3: ✓
     cwe:
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1035,6 +1063,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.9
     section_name: Communications Architectural Requirements
@@ -1045,9 +1074,9 @@
     level3: ✓
     cwe: 319
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1059,6 +1088,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.9
     section_name: Communications Architectural Requirements
@@ -1069,9 +1099,9 @@
     level3: ✓
     cwe: 295
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1083,6 +1113,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.10
     section_name: Malicious Software Architectural Requirements
@@ -1093,9 +1124,9 @@
     level3: ✓
     cwe: 284
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1107,6 +1138,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.11
     section_name: Business Logic Architectural Requirements
@@ -1117,9 +1149,9 @@
     level3: ✓
     cwe: 1059
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1131,6 +1163,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.11
     section_name: Business Logic Architectural Requirements
@@ -1141,9 +1174,9 @@
     level3: ✓
     cwe: 362
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1155,6 +1188,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.11
     section_name: Business Logic Architectural Requirements
@@ -1165,9 +1199,9 @@
     level3: ✓
     cwe: 367
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1179,6 +1213,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.12
     section_name: Secure File Upload Architectural Requirements
@@ -1189,9 +1224,9 @@
     level3: ✓
     cwe: 552
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1203,6 +1238,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.12
     section_name: Secure File Upload Architectural Requirements
@@ -1213,9 +1249,9 @@
     level3: ✓
     cwe: 646
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1227,6 +1263,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.14
     section_name: Configuration Architectural Requirements
@@ -1237,9 +1274,9 @@
     level3: ✓
     cwe: 923
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1251,6 +1288,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.14
     section_name: Configuration Architectural Requirements
@@ -1261,9 +1299,9 @@
     level3: ✓
     cwe: 494
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1275,6 +1313,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.14
     section_name: Configuration Architectural Requirements
@@ -1285,9 +1324,9 @@
     level3: ✓
     cwe: 1104
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1299,6 +1338,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.14
     section_name: Configuration Architectural Requirements
@@ -1309,9 +1349,9 @@
     level3: ✓
     cwe:
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1323,6 +1363,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.14
     section_name: Configuration Architectural Requirements
@@ -1333,9 +1374,9 @@
     level3: ✓
     cwe: 265
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1347,6 +1388,7 @@
     notes: ''
 -
     chapter_id: V1
+    module: Designing a Secure System
     chapter_name: Architecture, Design and Threat Modeling Requirements
     section_id: V1.14
     section_name: Configuration Architectural Requirements
@@ -1357,9 +1399,9 @@
     level3: ✓
     cwe: 477
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1371,6 +1413,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.1
     section_name: Password Security Requirements
@@ -1381,9 +1424,9 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms:
                 - 'user set passwords'
                 - 'characters in length'
@@ -1397,6 +1440,7 @@
     notes: 'Does this requirement expect the examiner to test every password or to ensure that the system allows passwords that meets this requirement? Why are spaces treated differently from other characters? There is no rational reason to remove them from a security point of view, if the issue is one of UX then it belongs in that standard not here.'
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.1
     section_name: Password Security Requirements
@@ -1407,9 +1451,9 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms:
                 - 'user passwords'
             level: 2
@@ -1422,6 +1466,7 @@
     notes: 'The OWASP Proactive Controls C6 referenced has no mention of an upper limit of 128. Where does this requirement come from? Can we align this with the updated NIST guidance (min 12 and at least 64 max).'
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.1
     section_name: Password Security Requirements
@@ -1432,9 +1477,9 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms:
                 - 'password truncation'
                 - 'consecutive multiple spaces'
@@ -1448,6 +1493,7 @@
     notes: 'The reference here does not explain the reason it is considered acceptable to modify the user input by removing consecutive spaces.'
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.1
     section_name: Password Security Requirements
@@ -1458,9 +1504,9 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms:
                 - 'printable Unicode character'
                 - 'neutral characters'
@@ -1477,6 +1523,7 @@
     notes: 'There are nearly 150k printable Unicode characters, perhaps some guidance on how this is testable on level 1?'
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.1
     section_name: Password Security Requirements
@@ -1487,9 +1534,9 @@
     level3: ✓
     cwe: 620
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms:
                 - 'users'
                 - 'passwords'
@@ -1503,6 +1550,7 @@
     notes: 'Suggest adding, "without divulging their plain text password".'
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.1
     section_name: Password Security Requirements
@@ -1513,9 +1561,9 @@
     level3: ✓
     cwe: 620
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms:
                 - 'password change'
                 - 'users'
@@ -1531,6 +1579,7 @@
     notes: 'I would rephrase this requirement as `requires the user''s current password as well as the new one` as the latter is obvious and it would put more emphasis on needing the old password too.'
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.1
     section_name: Password Security Requirements
@@ -1541,9 +1590,9 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms:
                 - 'password'
                 - 'account registration'
@@ -1554,19 +1603,19 @@
                 - 'plain text'
             level: 2
         -
-            concept: 'Cryptography'
+            unit: 'Cryptography'
             terms:
                 - 'zero knowledge proof'
             level: 2
         -
-            concept: 'API'
+            unit: 'API'
             terms:
                 - 'locally'
                 - 'external API'
                 - 'API'
             level: 2
         -
-            concept: 'Breach'
+            unit: 'Breach'
             terms:
                 - 'breached passwords'
                 - 'password is breached'
@@ -1584,6 +1633,7 @@
     notes: 'The use of the word "should" must be replaced with "must" The requirement asks that the password is not used to check the breached status of itself, the intention is, I believe, that the password is never available in plain text to the remote service and should state that.'
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.1
     section_name: Password Security Requirements
@@ -1594,16 +1644,16 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms:
                 - 'password'
                 - 'password strength'
                 - 'users'
             level: 2
         -
-            concept: 'User Interface'
+            unit: 'User Interface'
             terms:
                 - 'strength meter'
             level: 2
@@ -1617,6 +1667,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.1
     section_name: Password Security Requirements
@@ -1627,9 +1678,9 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms:
                 - 'password'
                 - 'password composition'
@@ -1644,6 +1695,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.1
     section_name: Password Security Requirements
@@ -1654,9 +1706,9 @@
     level3: ✓
     cwe: 263
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms:
                 - 'credential rotation'
                 - 'password history'
@@ -1670,6 +1722,7 @@
     notes: 'This requirement should end with "... for user set passwords.", requiring changes to machine passwords does not conflict with the NIST requirements.'
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.1
     section_name: Password Security Requirements
@@ -1680,15 +1733,15 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms:
                 - 'password helpers'
                 - 'external password managers'
             level: 2
         -
-            concept: 'User Interface'
+            unit: 'User Interface'
             terms:
                 - '"paste" functionality'
             level: 2
@@ -1702,6 +1755,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.1
     section_name: Password Security Requirements
@@ -1712,15 +1766,15 @@
     level3: ✓
     cwe: 521
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: 'Authentication'
+            unit: 'Authentication'
             terms:
                 - 'password'
                 - 'user'
             level: 2
         -
-            concept: 'User Interface'
+            unit: 'User Interface'
             terms:
                 - 'temporarily view'
                 - 'masked password'
@@ -1736,6 +1790,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.2
     section_name: General Authenticator Requirements
@@ -1746,9 +1801,9 @@
     level3: ✓
     cwe: 307
     nist: 5.2.2 / 5.1.1.2 / 5.1.4.2 / 5.1.5.2
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1760,6 +1815,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.2
     section_name: General Authenticator Requirements
@@ -1770,9 +1826,9 @@
     level3: ✓
     cwe: 304
     nist: 5.2.10
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1784,6 +1840,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.2
     section_name: General Authenticator Requirements
@@ -1794,9 +1851,9 @@
     level3: ✓
     cwe: 620
     nist:
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1808,6 +1865,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.2
     section_name: General Authenticator Requirements
@@ -1818,9 +1876,9 @@
     level3: ✓
     cwe: 308
     nist: 5.2.5
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1832,6 +1890,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.2
     section_name: General Authenticator Requirements
@@ -1842,9 +1901,9 @@
     level3: ✓
     cwe: 319
     nist: 5.2.6
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1856,6 +1915,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.2
     section_name: General Authenticator Requirements
@@ -1866,9 +1926,9 @@
     level3: ✓
     cwe: 308
     nist: 5.2.8
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1880,6 +1940,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.2
     section_name: General Authenticator Requirements
@@ -1890,9 +1951,9 @@
     level3: ✓
     cwe: 308
     nist: 5.2.9
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1904,6 +1965,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.3
     section_name: Authenticator Lifecycle Requirements
@@ -1914,9 +1976,9 @@
     level3: ✓
     cwe: 330
     nist: 5.1.1.2 / A.3
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1928,6 +1990,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.3
     section_name: Authenticator Lifecycle Requirements
@@ -1938,9 +2001,9 @@
     level3: ✓
     cwe: 308
     nist: 6.1.3
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1952,6 +2015,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.3
     section_name: Authenticator Lifecycle Requirements
@@ -1962,9 +2026,9 @@
     level3: ✓
     cwe: 287
     nist: 6.1.4
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -1976,6 +2040,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.4
     section_name: Credential Storage Requirements
@@ -1986,9 +2051,9 @@
     level3: ✓
     cwe: 916
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -2000,6 +2065,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.4
     section_name: Credential Storage Requirements
@@ -2010,9 +2076,9 @@
     level3: ✓
     cwe: 916
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -2024,6 +2090,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.4
     section_name: Credential Storage Requirements
@@ -2034,9 +2101,9 @@
     level3: ✓
     cwe: 916
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -2048,6 +2115,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.4
     section_name: Credential Storage Requirements
@@ -2058,9 +2126,9 @@
     level3: ✓
     cwe: 916
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -2072,6 +2140,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.4
     section_name: Credential Storage Requirements
@@ -2082,9 +2151,9 @@
     level3: ✓
     cwe: 916
     nist: 5.1.1.2
-    concepts:
+    units:
         -
-            concept: ''
+            unit: ''
             terms: ''
             level: 
     actions:
@@ -2096,6 +2165,7 @@
     notes: ''
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.5
     section_name: Credential Recovery Requirements
@@ -2108,6 +2178,7 @@
     nist: 5.1.1.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.5
     section_name: Credential Recovery Requirements
@@ -2120,6 +2191,7 @@
     nist: 5.1.1.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.5
     section_name: Credential Recovery Requirements
@@ -2132,6 +2204,7 @@
     nist: 5.1.1.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.5
     section_name: Credential Recovery Requirements
@@ -2144,6 +2217,7 @@
     nist: 5.1.1.2 / A.3
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.5
     section_name: Credential Recovery Requirements
@@ -2156,6 +2230,7 @@
     nist: 6.1.2.3
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.5
     section_name: Credential Recovery Requirements
@@ -2168,6 +2243,7 @@
     nist: 5.1.1.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.5
     section_name: Credential Recovery Requirements
@@ -2180,6 +2256,7 @@
     nist: 6.1.2.3
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.6
     section_name: Look-up Secret Verifier Requirements
@@ -2192,6 +2269,7 @@
     nist: 5.1.2.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.6
     section_name: Look-up Secret Verifier Requirements
@@ -2204,6 +2282,7 @@
     nist: 5.1.2.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.6
     section_name: Look-up Secret Verifier Requirements
@@ -2216,6 +2295,7 @@
     nist: 5.1.2.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.7
     section_name: Out of Band Verifier Requirements
@@ -2228,6 +2308,7 @@
     nist: 5.1.3.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.7
     section_name: Out of Band Verifier Requirements
@@ -2240,6 +2321,7 @@
     nist: 5.1.3.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.7
     section_name: Out of Band Verifier Requirements
@@ -2252,6 +2334,7 @@
     nist: 5.1.3.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.7
     section_name: Out of Band Verifier Requirements
@@ -2264,6 +2347,7 @@
     nist: 5.1.3.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.7
     section_name: Out of Band Verifier Requirements
@@ -2276,6 +2360,7 @@
     nist: 5.1.3.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.7
     section_name: Out of Band Verifier Requirements
@@ -2288,6 +2373,7 @@
     nist: 5.1.3.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.8
     section_name: Single or Multi-factor One Time Verifier Requirements
@@ -2300,6 +2386,7 @@
     nist: 5.1.4.2 / 5.1.5.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.8
     section_name: Single or Multi-factor One Time Verifier Requirements
@@ -2312,6 +2399,7 @@
     nist: 5.1.4.2 / 5.1.5.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.8
     section_name: Single or Multi-factor One Time Verifier Requirements
@@ -2324,6 +2412,7 @@
     nist: 5.1.4.2 / 5.1.5.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.8
     section_name: Single or Multi-factor One Time Verifier Requirements
@@ -2336,6 +2425,7 @@
     nist: 5.1.4.2 / 5.1.5.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.8
     section_name: Single or Multi-factor One Time Verifier Requirements
@@ -2348,6 +2438,7 @@
     nist: 5.1.5.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.8
     section_name: Single or Multi-factor One Time Verifier Requirements
@@ -2360,6 +2451,7 @@
     nist: 5.2.1
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.8
     section_name: Single or Multi-factor One Time Verifier Requirements
@@ -2372,6 +2464,7 @@
     nist: 5.2.3
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.9
     section_name: Cryptographic Software and Devices Verifier Requirements
@@ -2384,6 +2477,7 @@
     nist: 5.1.7.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.9
     section_name: Cryptographic Software and Devices Verifier Requirements
@@ -2396,6 +2490,7 @@
     nist: 5.1.7.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.9
     section_name: Cryptographic Software and Devices Verifier Requirements
@@ -2408,6 +2503,7 @@
     nist: 5.1.7.2
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.10
     section_name: Service Authentication Requirements
@@ -2420,6 +2516,7 @@
     nist: 5.1.1.1
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.10
     section_name: Service Authentication Requirements
@@ -2432,6 +2529,7 @@
     nist: 5.1.1.1
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.10
     section_name: Service Authentication Requirements
@@ -2444,6 +2542,7 @@
     nist: 5.1.1.1
 -
     chapter_id: V2
+    module: Authentication
     chapter_name: Authentication Verification Requirements
     section_id: V2.10
     section_name: Service Authentication Requirements
@@ -2456,6 +2555,7 @@
     nist:
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.1
     section_name: Fundamental Session Management Requirements
@@ -2468,6 +2568,7 @@
     nist:
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.2
     section_name: Session Binding Requirements
@@ -2480,6 +2581,7 @@
     nist: 7.1
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.2
     section_name: Session Binding Requirements
@@ -2492,6 +2594,7 @@
     nist: 7.1
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.2
     section_name: Session Binding Requirements
@@ -2504,6 +2607,7 @@
     nist: 7.1
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.2
     section_name: Session Binding Requirements
@@ -2516,6 +2620,7 @@
     nist: 7.1
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.3
     section_name: Session Logout and Timeout Requirements
@@ -2528,6 +2633,7 @@
     nist: 7.1
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.3
     section_name: Session Logout and Timeout Requirements
@@ -2540,6 +2646,7 @@
     nist: 7.2
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.3
     section_name: Session Logout and Timeout Requirements
@@ -2552,6 +2659,7 @@
     nist:
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.3
     section_name: Session Logout and Timeout Requirements
@@ -2564,6 +2672,7 @@
     nist: 7.1
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.4
     section_name: Cookie-based Session Management
@@ -2576,6 +2685,7 @@
     nist: 7.1.1
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.4
     section_name: Cookie-based Session Management
@@ -2588,6 +2698,7 @@
     nist: 7.1.1
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.4
     section_name: Cookie-based Session Management
@@ -2600,6 +2711,7 @@
     nist: 7.1.1
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.4
     section_name: Cookie-based Session Management
@@ -2612,6 +2724,7 @@
     nist: 7.1.1
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.4
     section_name: Cookie-based Session Management
@@ -2624,6 +2737,7 @@
     nist: 7.1.1
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.5
     section_name: Token-based Session Management
@@ -2636,6 +2750,7 @@
     nist: 7.1.2
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.5
     section_name: Token-based Session Management
@@ -2648,6 +2763,7 @@
     nist:
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.5
     section_name: Token-based Session Management
@@ -2660,6 +2776,7 @@
     nist:
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.6
     section_name: Re-authentication from a Federation or Assertion
@@ -2672,6 +2789,7 @@
     nist: 7.2.1
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.6
     section_name: Re-authentication from a Federation or Assertion
@@ -2684,6 +2802,7 @@
     nist: 7.2.1
 -
     chapter_id: V3
+    module: Session Management
     chapter_name: Session Management Verification Requirements
     section_id: V3.7
     section_name: Defenses Against Session Management Exploits
@@ -2696,6 +2815,7 @@
     nist:
 -
     chapter_id: V4
+    module: Authorization
     chapter_name: Access Control Verification Requirements
     section_id: V4.1
     section_name: General Access Control Design
@@ -2708,6 +2828,7 @@
     nist:
 -
     chapter_id: V4
+    module: Authorization
     chapter_name: Access Control Verification Requirements
     section_id: V4.1
     section_name: General Access Control Design
@@ -2720,6 +2841,7 @@
     nist:
 -
     chapter_id: V4
+    module: Authorization
     chapter_name: Access Control Verification Requirements
     section_id: V4.1
     section_name: General Access Control Design
@@ -2732,6 +2854,7 @@
     nist:
 -
     chapter_id: V4
+    module: Authorization
     chapter_name: Access Control Verification Requirements
     section_id: V4.1
     section_name: General Access Control Design
@@ -2744,6 +2867,7 @@
     nist:
 -
     chapter_id: V4
+    module: Authorization
     chapter_name: Access Control Verification Requirements
     section_id: V4.1
     section_name: General Access Control Design
@@ -2756,6 +2880,7 @@
     nist:
 -
     chapter_id: V4
+    module: Authorization
     chapter_name: Access Control Verification Requirements
     section_id: V4.2
     section_name: Operation Level Access Control
@@ -2768,6 +2893,7 @@
     nist:
 -
     chapter_id: V4
+    module: Authorization
     chapter_name: Access Control Verification Requirements
     section_id: V4.2
     section_name: Operation Level Access Control
@@ -2780,6 +2906,7 @@
     nist:
 -
     chapter_id: V4
+    module: Authorization
     chapter_name: Access Control Verification Requirements
     section_id: V4.3
     section_name: Other Access Control Considerations
@@ -2792,6 +2919,7 @@
     nist:
 -
     chapter_id: V4
+    module: Authorization
     chapter_name: Access Control Verification Requirements
     section_id: V4.3
     section_name: Other Access Control Considerations
@@ -2804,6 +2932,7 @@
     nist:
 -
     chapter_id: V4
+    module: Authorization
     chapter_name: Access Control Verification Requirements
     section_id: V4.3
     section_name: Other Access Control Considerations
@@ -2816,6 +2945,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.1
     section_name: Input Validation Requirements
@@ -2828,6 +2958,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.1
     section_name: Input Validation Requirements
@@ -2840,6 +2971,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.1
     section_name: Input Validation Requirements
@@ -2852,6 +2984,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.1
     section_name: Input Validation Requirements
@@ -2864,6 +2997,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.1
     section_name: Input Validation Requirements
@@ -2876,6 +3010,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -2888,6 +3023,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -2900,6 +3036,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -2912,6 +3049,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -2924,6 +3062,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -2936,6 +3075,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -2948,6 +3088,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -2960,6 +3101,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.2
     section_name: Sanitization and Sandboxing Requirements
@@ -2972,6 +3114,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -2984,6 +3127,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -2996,6 +3140,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3008,6 +3153,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3020,6 +3166,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3032,6 +3179,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3044,6 +3192,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3056,6 +3205,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3068,6 +3218,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3080,6 +3231,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.3
     section_name: Output Encoding and Injection Prevention Requirements
@@ -3092,6 +3244,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.4
     section_name: Memory, String, and Unmanaged Code Requirements
@@ -3104,6 +3257,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.4
     section_name: Memory, String, and Unmanaged Code Requirements
@@ -3116,6 +3270,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.4
     section_name: Memory, String, and Unmanaged Code Requirements
@@ -3128,6 +3283,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.5
     section_name: Deserialization Prevention Requirements
@@ -3140,6 +3296,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.5
     section_name: Deserialization Prevention Requirements
@@ -3152,6 +3309,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.5
     section_name: Deserialization Prevention Requirements
@@ -3164,6 +3322,7 @@
     nist:
 -
     chapter_id: V5
+    module: Data Security
     chapter_name: Validation, Sanitization and Encoding Verification Requirements
     section_id: V5.5
     section_name: Deserialization Prevention Requirements
@@ -3176,6 +3335,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.1
     section_name: Data Classification
@@ -3188,6 +3348,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.1
     section_name: Data Classification
@@ -3200,6 +3361,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.1
     section_name: Data Classification
@@ -3212,6 +3374,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.2
     section_name: Algorithms
@@ -3224,6 +3387,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.2
     section_name: Algorithms
@@ -3236,6 +3400,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.2
     section_name: Algorithms
@@ -3248,6 +3413,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.2
     section_name: Algorithms
@@ -3260,6 +3426,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.2
     section_name: Algorithms
@@ -3272,6 +3439,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.2
     section_name: Algorithms
@@ -3284,6 +3452,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.2
     section_name: Algorithms
@@ -3296,6 +3465,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.2
     section_name: Algorithms
@@ -3308,6 +3478,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.3
     section_name: Random Values
@@ -3320,6 +3491,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.3
     section_name: Random Values
@@ -3332,6 +3504,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.3
     section_name: Random Values
@@ -3344,6 +3517,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.4
     section_name: Secret Management
@@ -3356,6 +3530,7 @@
     nist:
 -
     chapter_id: V6
+    module: Cryptography
     chapter_name: Stored Cryptography Verification Requirements
     section_id: V6.4
     section_name: Secret Management
@@ -3368,6 +3543,7 @@
     nist:
 -
     chapter_id: V7
+    module: Logging and Monitoring
     chapter_name: Error Handling and Logging Verification Requirements
     section_id: V7.1
     section_name: Log Content Requirements
@@ -3380,6 +3556,7 @@
     nist:
 -
     chapter_id: V7
+    module: Logging and Monitoring
     chapter_name: Error Handling and Logging Verification Requirements
     section_id: V7.1
     section_name: Log Content Requirements
@@ -3392,6 +3569,7 @@
     nist:
 -
     chapter_id: V7
+    module: Logging and Monitoring
     chapter_name: Error Handling and Logging Verification Requirements
     section_id: V7.1
     section_name: Log Content Requirements
@@ -3404,6 +3582,7 @@
     nist:
 -
     chapter_id: V7
+    module: Logging and Monitoring
     chapter_name: Error Handling and Logging Verification Requirements
     section_id: V7.1
     section_name: Log Content Requirements
@@ -3416,6 +3595,7 @@
     nist:
 -
     chapter_id: V7
+    module: Logging and Monitoring
     chapter_name: Error Handling and Logging Verification Requirements
     section_id: V7.2
     section_name: Log Processing Requirements
@@ -3428,6 +3608,7 @@
     nist:
 -
     chapter_id: V7
+    module: Logging and Monitoring
     chapter_name: Error Handling and Logging Verification Requirements
     section_id: V7.2
     section_name: Log Processing Requirements
@@ -3440,6 +3621,7 @@
     nist:
 -
     chapter_id: V7
+    module: Logging and Monitoring
     chapter_name: Error Handling and Logging Verification Requirements
     section_id: V7.3
     section_name: Log Protection Requirements
@@ -3452,6 +3634,7 @@
     nist:
 -
     chapter_id: V7
+    module: Logging and Monitoring
     chapter_name: Error Handling and Logging Verification Requirements
     section_id: V7.3
     section_name: Log Protection Requirements
@@ -3464,6 +3647,7 @@
     nist:
 -
     chapter_id: V7
+    module: Logging and Monitoring
     chapter_name: Error Handling and Logging Verification Requirements
     section_id: V7.3
     section_name: Log Protection Requirements
@@ -3476,6 +3660,7 @@
     nist:
 -
     chapter_id: V7
+    module: Logging and Monitoring
     chapter_name: Error Handling and Logging Verification Requirements
     section_id: V7.3
     section_name: Log Protection Requirements
@@ -3488,6 +3673,7 @@
     nist:
 -
     chapter_id: V7
+    module: Logging and Monitoring
     chapter_name: Error Handling and Logging Verification Requirements
     section_id: V7.4
     section_name: Error Handling
@@ -3500,6 +3686,7 @@
     nist:
 -
     chapter_id: V7
+    module: Logging and Monitoring
     chapter_name: Error Handling and Logging Verification Requirements
     section_id: V7.4
     section_name: Error Handling
@@ -3512,6 +3699,7 @@
     nist:
 -
     chapter_id: V7
+    module: Logging and Monitoring
     chapter_name: Error Handling and Logging Verification Requirements
     section_id: V7.4
     section_name: Error Handling
@@ -3524,6 +3712,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.1
     section_name: General Data Protection
@@ -3536,6 +3725,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.1
     section_name: General Data Protection
@@ -3548,6 +3738,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.1
     section_name: General Data Protection
@@ -3560,6 +3751,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.1
     section_name: General Data Protection
@@ -3572,6 +3764,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.1
     section_name: General Data Protection
@@ -3584,6 +3777,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.1
     section_name: General Data Protection
@@ -3596,6 +3790,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.2
     section_name: Client-side Data Protection
@@ -3608,6 +3803,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.2
     section_name: Client-side Data Protection
@@ -3620,6 +3816,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.2
     section_name: Client-side Data Protection
@@ -3632,6 +3829,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -3644,6 +3842,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -3656,6 +3855,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -3668,6 +3868,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -3680,6 +3881,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -3692,6 +3894,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -3704,6 +3907,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -3716,6 +3920,7 @@
     nist:
 -
     chapter_id: V8
+    module: Data Security
     chapter_name: Data Protection Verification Requirements
     section_id: V8.3
     section_name: Sensitive Private Data
@@ -3728,6 +3933,7 @@
     nist:
 -
     chapter_id: V9
+    module: Network Security
     chapter_name: Communications Verification Requirements
     section_id: V9.1
     section_name: Client Communications Security Requirements
@@ -3740,6 +3946,7 @@
     nist:
 -
     chapter_id: V9
+    module: Network Security
     chapter_name: Communications Verification Requirements
     section_id: V9.1
     section_name: Client Communications Security Requirements
@@ -3752,6 +3959,7 @@
     nist:
 -
     chapter_id: V9
+    module: Network Security
     chapter_name: Communications Verification Requirements
     section_id: V9.1
     section_name: Client Communications Security Requirements
@@ -3764,6 +3972,7 @@
     nist:
 -
     chapter_id: V9
+    module: Network Security
     chapter_name: Communications Verification Requirements
     section_id: V9.2
     section_name: Server Communications Security Requirements
@@ -3776,6 +3985,7 @@
     nist:
 -
     chapter_id: V9
+    module: Network Security
     chapter_name: Communications Verification Requirements
     section_id: V9.2
     section_name: Server Communications Security Requirements
@@ -3788,6 +3998,7 @@
     nist:
 -
     chapter_id: V9
+    module: Network Security
     chapter_name: Communications Verification Requirements
     section_id: V9.2
     section_name: Server Communications Security Requirements
@@ -3800,6 +4011,7 @@
     nist:
 -
     chapter_id: V9
+    module: Network Security
     chapter_name: Communications Verification Requirements
     section_id: V9.2
     section_name: Server Communications Security Requirements
@@ -3812,6 +4024,7 @@
     nist:
 -
     chapter_id: V9
+    module: Network Security
     chapter_name: Communications Verification Requirements
     section_id: V9.2
     section_name: Server Communications Security Requirements
@@ -3824,6 +4037,7 @@
     nist:
 -
     chapter_id: V10
+    module: Building a Secure System
     chapter_name: Malicious Code Verification Requirements
     section_id: V10.1
     section_name: Code Integrity Controls
@@ -3836,6 +4050,7 @@
     nist:
 -
     chapter_id: V10
+    module: Building a Secure System
     chapter_name: Malicious Code Verification Requirements
     section_id: V10.2
     section_name: Malicious Code Search
@@ -3848,6 +4063,7 @@
     nist:
 -
     chapter_id: V10
+    module: Building a Secure System
     chapter_name: Malicious Code Verification Requirements
     section_id: V10.2
     section_name: Malicious Code Search
@@ -3860,6 +4076,7 @@
     nist:
 -
     chapter_id: V10
+    module: Building a Secure System
     chapter_name: Malicious Code Verification Requirements
     section_id: V10.2
     section_name: Malicious Code Search
@@ -3872,6 +4089,7 @@
     nist:
 -
     chapter_id: V10
+    module: Building a Secure System
     chapter_name: Malicious Code Verification Requirements
     section_id: V10.2
     section_name: Malicious Code Search
@@ -3884,6 +4102,7 @@
     nist:
 -
     chapter_id: V10
+    module: Building a Secure System
     chapter_name: Malicious Code Verification Requirements
     section_id: V10.2
     section_name: Malicious Code Search
@@ -3896,6 +4115,7 @@
     nist:
 -
     chapter_id: V10
+    module: Building a Secure System
     chapter_name: Malicious Code Verification Requirements
     section_id: V10.2
     section_name: Malicious Code Search
@@ -3908,6 +4128,7 @@
     nist:
 -
     chapter_id: V10
+    module: Building a Secure System
     chapter_name: Malicious Code Verification Requirements
     section_id: V10.3
     section_name: Deployed Application Integrity Controls
@@ -3920,6 +4141,7 @@
     nist:
 -
     chapter_id: V10
+    module: Building a Secure System
     chapter_name: Malicious Code Verification Requirements
     section_id: V10.3
     section_name: Deployed Application Integrity Controls
@@ -3932,6 +4154,7 @@
     nist:
 -
     chapter_id: V10
+    module: Building a Secure System
     chapter_name: Malicious Code Verification Requirements
     section_id: V10.3
     section_name: Deployed Application Integrity Controls
@@ -3944,6 +4167,7 @@
     nist:
 -
     chapter_id: V11
+    module: Building a Secure System
     chapter_name: Business Logic Verification Requirements
     section_id: V11.1
     section_name: Business Logic Security Requirements
@@ -3956,6 +4180,7 @@
     nist:
 -
     chapter_id: V11
+    module: Building a Secure System
     chapter_name: Business Logic Verification Requirements
     section_id: V11.1
     section_name: Business Logic Security Requirements
@@ -3968,6 +4193,7 @@
     nist:
 -
     chapter_id: V11
+    module: Building a Secure System
     chapter_name: Business Logic Verification Requirements
     section_id: V11.1
     section_name: Business Logic Security Requirements
@@ -3980,6 +4206,7 @@
     nist:
 -
     chapter_id: V11
+    module: Building a Secure System
     chapter_name: Business Logic Verification Requirements
     section_id: V11.1
     section_name: Business Logic Security Requirements
@@ -3992,6 +4219,7 @@
     nist:
 -
     chapter_id: V11
+    module: Building a Secure System
     chapter_name: Business Logic Verification Requirements
     section_id: V11.1
     section_name: Business Logic Security Requirements
@@ -4004,6 +4232,7 @@
     nist:
 -
     chapter_id: V11
+    module: Building a Secure System
     chapter_name: Business Logic Verification Requirements
     section_id: V11.1
     section_name: Business Logic Security Requirements
@@ -4016,6 +4245,7 @@
     nist:
 -
     chapter_id: V11
+    module: Building a Secure System
     chapter_name: Business Logic Verification Requirements
     section_id: V11.1
     section_name: Business Logic Security Requirements
@@ -4028,6 +4258,7 @@
     nist:
 -
     chapter_id: V11
+    module: Building a Secure System
     chapter_name: Business Logic Verification Requirements
     section_id: V11.1
     section_name: Business Logic Security Requirements
@@ -4040,6 +4271,7 @@
     nist:
 -
     chapter_id: V12
+    module: Data Security
     chapter_name: File and Resources Verification Requirements
     section_id: V12.1
     section_name: File Upload Requirements
@@ -4052,6 +4284,7 @@
     nist:
 -
     chapter_id: V12
+    module: Data Security
     chapter_name: File and Resources Verification Requirements
     section_id: V12.1
     section_name: File Upload Requirements
@@ -4064,6 +4297,7 @@
     nist:
 -
     chapter_id: V12
+    module: Data Security
     chapter_name: File and Resources Verification Requirements
     section_id: V12.1
     section_name: File Upload Requirements
@@ -4076,6 +4310,7 @@
     nist:
 -
     chapter_id: V12
+    module: Data Security
     chapter_name: File and Resources Verification Requirements
     section_id: V12.2
     section_name: File Integrity Requirements
@@ -4088,6 +4323,7 @@
     nist:
 -
     chapter_id: V12
+    module: Data Security
     chapter_name: File and Resources Verification Requirements
     section_id: V12.3
     section_name: File Execution Requirements
@@ -4100,6 +4336,7 @@
     nist:
 -
     chapter_id: V12
+    module: Data Security
     chapter_name: File and Resources Verification Requirements
     section_id: V12.3
     section_name: File Execution Requirements
@@ -4112,6 +4349,7 @@
     nist:
 -
     chapter_id: V12
+    module: Data Security
     chapter_name: File and Resources Verification Requirements
     section_id: V12.3
     section_name: File Execution Requirements
@@ -4124,6 +4362,7 @@
     nist:
 -
     chapter_id: V12
+    module: Data Security
     chapter_name: File and Resources Verification Requirements
     section_id: V12.3
     section_name: File Execution Requirements
@@ -4136,6 +4375,7 @@
     nist:
 -
     chapter_id: V12
+    module: Data Security
     chapter_name: File and Resources Verification Requirements
     section_id: V12.3
     section_name: File Execution Requirements
@@ -4148,6 +4388,7 @@
     nist:
 -
     chapter_id: V12
+    module: Data Security
     chapter_name: File and Resources Verification Requirements
     section_id: V12.3
     section_name: File Execution Requirements
@@ -4160,6 +4401,7 @@
     nist:
 -
     chapter_id: V12
+    module: Data Security
     chapter_name: File and Resources Verification Requirements
     section_id: V12.4
     section_name: File Storage Requirements
@@ -4172,6 +4414,7 @@
     nist:
 -
     chapter_id: V12
+    module: Data Security
     chapter_name: File and Resources Verification Requirements
     section_id: V12.4
     section_name: File Storage Requirements
@@ -4184,6 +4427,7 @@
     nist:
 -
     chapter_id: V12
+    module: Data Security
     chapter_name: File and Resources Verification Requirements
     section_id: V12.5
     section_name: File Download Requirements
@@ -4196,6 +4440,7 @@
     nist:
 -
     chapter_id: V12
+    module: Data Security
     chapter_name: File and Resources Verification Requirements
     section_id: V12.5
     section_name: File Download Requirements
@@ -4208,6 +4453,7 @@
     nist:
 -
     chapter_id: V12
+    module: Data Security
     chapter_name: File and Resources Verification Requirements
     section_id: V12.6
     section_name: SSRF Protection Requirements
@@ -4220,6 +4466,7 @@
     nist:
 -
     chapter_id: V13
+    module: Securing APIs
     chapter_name: API and Web Service Verification Requirements
     section_id: V13.1
     section_name: Generic Web Service Security Verification Requirements
@@ -4232,6 +4479,7 @@
     nist:
 -
     chapter_id: V13
+    module: Securing APIs
     chapter_name: API and Web Service Verification Requirements
     section_id: V13.1
     section_name: Generic Web Service Security Verification Requirements
@@ -4244,6 +4492,7 @@
     nist:
 -
     chapter_id: V13
+    module: Securing APIs
     chapter_name: API and Web Service Verification Requirements
     section_id: V13.1
     section_name: Generic Web Service Security Verification Requirements
@@ -4256,6 +4505,7 @@
     nist:
 -
     chapter_id: V13
+    module: Securing APIs
     chapter_name: API and Web Service Verification Requirements
     section_id: V13.1
     section_name: Generic Web Service Security Verification Requirements
@@ -4268,6 +4518,7 @@
     nist:
 -
     chapter_id: V13
+    module: Securing APIs
     chapter_name: API and Web Service Verification Requirements
     section_id: V13.1
     section_name: Generic Web Service Security Verification Requirements
@@ -4280,6 +4531,7 @@
     nist:
 -
     chapter_id: V13
+    module: Securing APIs
     chapter_name: API and Web Service Verification Requirements
     section_id: V13.2
     section_name: RESTful Web Service Verification Requirements
@@ -4292,6 +4544,7 @@
     nist:
 -
     chapter_id: V13
+    module: Securing APIs
     chapter_name: API and Web Service Verification Requirements
     section_id: V13.2
     section_name: RESTful Web Service Verification Requirements
@@ -4304,6 +4557,7 @@
     nist:
 -
     chapter_id: V13
+    module: Securing APIs
     chapter_name: API and Web Service Verification Requirements
     section_id: V13.2
     section_name: RESTful Web Service Verification Requirements
@@ -4316,6 +4570,7 @@
     nist:
 -
     chapter_id: V13
+    module: Securing APIs
     chapter_name: API and Web Service Verification Requirements
     section_id: V13.2
     section_name: RESTful Web Service Verification Requirements
@@ -4328,6 +4583,7 @@
     nist:
 -
     chapter_id: V13
+    module: Securing APIs
     chapter_name: API and Web Service Verification Requirements
     section_id: V13.2
     section_name: RESTful Web Service Verification Requirements
@@ -4340,6 +4596,7 @@
     nist:
 -
     chapter_id: V13
+    module: Securing APIs
     chapter_name: API and Web Service Verification Requirements
     section_id: V13.2
     section_name: RESTful Web Service Verification Requirements
@@ -4352,6 +4609,7 @@
     nist:
 -
     chapter_id: V13
+    module: Securing APIs
     chapter_name: API and Web Service Verification Requirements
     section_id: V13.3
     section_name: SOAP Web Service Verification Requirements
@@ -4364,6 +4622,7 @@
     nist:
 -
     chapter_id: V13
+    module: Securing APIs
     chapter_name: API and Web Service Verification Requirements
     section_id: V13.3
     section_name: SOAP Web Service Verification Requirements
@@ -4376,6 +4635,7 @@
     nist:
 -
     chapter_id: V13
+    module: Securing APIs
     chapter_name: API and Web Service Verification Requirements
     section_id: V13.4
     section_name: GraphQL and other Web Service Data Layer Security Requirements
@@ -4388,6 +4648,7 @@
     nist:
 -
     chapter_id: V13
+    module: Securing APIs
     chapter_name: API and Web Service Verification Requirements
     section_id: V13.4
     section_name: GraphQL and other Web Service Data Layer Security Requirements
@@ -4400,6 +4661,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.1
     section_name: Build
@@ -4412,6 +4674,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.1
     section_name: Build
@@ -4424,6 +4687,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.1
     section_name: Build
@@ -4436,6 +4700,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.1
     section_name: Build
@@ -4448,6 +4713,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.1
     section_name: Build
@@ -4460,6 +4726,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.2
     section_name: Dependency
@@ -4472,6 +4739,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.2
     section_name: Dependency
@@ -4484,6 +4752,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.2
     section_name: Dependency
@@ -4496,6 +4765,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.2
     section_name: Dependency
@@ -4508,6 +4778,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.2
     section_name: Dependency
@@ -4520,6 +4791,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.2
     section_name: Dependency
@@ -4532,6 +4804,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.3
     section_name: Unintended Security Disclosure Requirements
@@ -4544,6 +4817,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.3
     section_name: Unintended Security Disclosure Requirements
@@ -4556,6 +4830,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.3
     section_name: Unintended Security Disclosure Requirements
@@ -4568,6 +4843,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.4
     section_name: HTTP Security Headers Requirements
@@ -4580,6 +4856,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.4
     section_name: HTTP Security Headers Requirements
@@ -4592,6 +4869,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.4
     section_name: HTTP Security Headers Requirements
@@ -4604,6 +4882,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.4
     section_name: HTTP Security Headers Requirements
@@ -4616,6 +4895,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.4
     section_name: HTTP Security Headers Requirements
@@ -4628,6 +4908,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.4
     section_name: HTTP Security Headers Requirements
@@ -4640,6 +4921,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.4
     section_name: HTTP Security Headers Requirements
@@ -4652,6 +4934,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.5
     section_name: Validate HTTP Request Header Requirements
@@ -4664,6 +4947,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.5
     section_name: Validate HTTP Request Header Requirements
@@ -4676,6 +4960,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.5
     section_name: Validate HTTP Request Header Requirements
@@ -4688,6 +4973,7 @@
     nist:
 -
     chapter_id: V14
+    module: Configuration Management
     chapter_name: Configuration Verification Requirements
     section_id: V14.5
     section_name: Validate HTTP Request Header Requirements
