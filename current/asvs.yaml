@@ -1596,7 +1596,6 @@
     nist: 5.1.1.2
     concepts:
         -
-<<<<<<< HEAD
             concept: 'Authentication'
             terms:
                 - 'password'
@@ -1612,15 +1611,6 @@
         -
             action: 'verify that'
             level: 2
-=======
-            concept: ''
-            terms: ''
-            level: 
-    actions:
-        -
-            action: ''
-            level: 
->>>>>>> dd5daf4 (Changes from interactive review with @rewtd)
             mappings:
                 - 'Authentication'
                 - 'User Interface'
@@ -1639,7 +1629,6 @@
     nist: 5.1.1.2
     concepts:
         -
-<<<<<<< HEAD
             concept: 'Authentication'
             terms:
                 - 'password'
@@ -1650,15 +1639,6 @@
         -
             action: 'verify that'
             level: 2
-=======
-            concept: ''
-            terms: ''
-            level: 
-    actions:
-        -
-            action: ''
-            level: 
->>>>>>> dd5daf4 (Changes from interactive review with @rewtd)
             mappings:
                 - 'Authentication'
     notes: ''
@@ -1676,7 +1656,6 @@
     nist: 5.1.1.2
     concepts:
         -
-<<<<<<< HEAD
             concept: 'Authentication'
             terms:
                 - 'credential rotation'
@@ -1686,15 +1665,6 @@
         -
             action: 'verify that'
             level: 2
-=======
-            concept: ''
-            terms: ''
-            level: 
-    actions:
-        -
-            action: ''
-            level: 
->>>>>>> dd5daf4 (Changes from interactive review with @rewtd)
             mappings:
                 - 'Authentication'
     notes: 'This requirement should end with "... for user set passwords.", requiring changes to machine passwords does not conflict with the NIST requirements.'
@@ -1712,7 +1682,6 @@
     nist: 5.1.1.2
     concepts:
         -
-<<<<<<< HEAD
             concept: 'Authentication'
             terms:
                 - 'password helpers'
@@ -1727,15 +1696,6 @@
         -
             action: 'verify that'
             level: 2
-=======
-            concept: ''
-            terms: ''
-            level: 
-    actions:
-        -
-            action: ''
-            level: 
->>>>>>> dd5daf4 (Changes from interactive review with @rewtd)
             mappings:
                 - 'Authentication'
                 - 'User Interface'
@@ -1754,7 +1714,6 @@
     nist: 5.1.1.2
     concepts:
         -
-<<<<<<< HEAD
             concept: 'Authentication'
             terms:
                 - 'password'
@@ -1771,15 +1730,6 @@
         -
             action: 'verify that'
             level: 2
-=======
-            concept: ''
-            terms: ''
-            level: 
-    actions:
-        -
-            action: ''
-            level: 
->>>>>>> dd5daf4 (Changes from interactive review with @rewtd)
             mappings:
                 - 'Authentication'
                 - 'User Interface'
