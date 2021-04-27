@@ -63,7 +63,7 @@ To provide educational guidance, we map each item of knowledge that needs to be 
 
 In the data structure representing the `units` to be taught (shown in later sections) we use the representation where 
     level `1` = `remember`, and 
-    level `5` = `create`
+    level `6` = `create`
 
 
 
