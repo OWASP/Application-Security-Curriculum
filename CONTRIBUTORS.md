@@ -9,7 +9,7 @@ We're all volunteers here, and we can only do so much in our spare time to make 
 ## Getting Started
 
 Contributions are being accepted via Pull Requests to this repository.
-If you are new to contributing via GitHub, Digital Ocean has [a pretty good guide](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github) on how this works. If you need a primer on [how to use Git](https://docs.github.com/en/github/using-git), GitHub has some excellent guides.
+If you are new to contributing via GitHub, Digital Ocean has [a pretty good guide](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github) on how this works. If you need a primer on [how to use Git](https://docs.github.com/en/github/using-git), GitHub has some excellent guides. Please note, we do require [commit signing](https://docs.github.com/en/github/authenticating-to-github/about-commit-signature-verification) for merges to the main branch so please also configure that.
 
 Once a Pull Request is created, please allow a few days for the repository maintainers to review your submission. If you don't hear from us (in over a week), please reach out to us on the OWASP Slack in the #education-committee channel.
 
