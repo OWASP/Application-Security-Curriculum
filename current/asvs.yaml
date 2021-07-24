@@ -856,10 +856,11 @@
             level: 
     actions:
         -
-            action: ''
+            action: 'verify that output encoding occurs close to the interpreter'
             level: 
             mappings:
-                -
+                - 'output encoding'
+                - 'interpreter'
     notes: ''
 -
     chapter_id: V1
@@ -881,11 +882,38 @@
             level: 
     actions:
         -
-            action: ''
+            action: 'verify there is a cryptographic key management policy'
             level: 
             mappings:
-                -
-    notes: ''
+                - 'cryptographic key'
+                - 'policy'
+        -
+            action: 'cryptographic key lifecycle follows a key management standard'
+            level:
+            mappings:
+                - 'cryptographic key lifecycle'
+                - 'cryptographic hash functions'
+                - 'symmetric-key algorithms'
+                - 'asymmetric-key algorithms'
+                - 'message authentication codes (MACs)'
+                - 'digital signatures'
+                - 'key encryption keys'
+                - 'root certificate'
+                - 'random number generation'
+                - 'perfect forward secrecy'
+                - 'key generation'
+                - 'key distribution'
+                - 'confirmation'
+                - 'establishment'
+                - 'key storage'
+                - 'trust store'
+                - 'key backup'
+                - 'key escrow'
+                - 'accountability'
+                - 'key compromise'
+                - 'key recovery'
+                - 'audit'
+    notes: 'This seems to be very focused on having a policy and making sure that the policy follows a standard. It seems like we would want someone to actually implement policy. This could be simplified to: Verify there is a key management lifecycle policy that follows a public standard such as NIST SP 800-57 in place and that it is implemented appropriately.'
 -
     chapter_id: V1
     module: Designing a Secure System
@@ -906,11 +934,17 @@
             level: 
     actions:
         -
-            action: ''
+            action: 'verify key material or other secrets are protected at rest'
             level: 
             mappings:
-                -
-    notes: ''
+                - 'secrets'
+                - 'key material'
+                - 'secrets manager'
+                - 'key vault' 
+                - 'hardware security module (HSM)'
+                - 'trusted platform module (TPM)'
+                - 'FIPS'
+    notes: '1) There should be some mention of "appropriate" here or call out that there may be different levels of appropriate depending on the regulatory, legal or safety reqirements for an application (different types of secrets may require more secure (and costly) storage mechanisms. 2) "Consumers for cryptographic services" is strange here. A developer would not think of themselves as a "consumer of crypto services". They would think of themselves as someone who has to implement this crypto thing (where their first instinct would be to store the key in a configuration file-- not a service). Or, they have to use a service which is protected with some sort of key... They will not think of that "service" as a "crypto-service". 3) There is a big difference in security requirements when managing key material versus plain-jane application secrets (like a database password), and you use different tools. Do we want to introduce both of these in this section? Or, should secrets and key material be managed in a different way? 4) I have added HSM and TPM because I am unsure which type of application development we are focusing on. If IOT is in focus, then TPMs become relevant. Are we focused here on storage? Or, are we also focused on processing (some vaults offer cryptoprocessing as well).'
 -
     chapter_id: V1
     module: Designing a Secure System
@@ -931,11 +965,32 @@
             level: 
     actions:
         -
-            action: ''
-            level: 
+            action: 'verify all keys are replaceable'
+            level:
             mappings:
-                -
-    notes: ''
+                - 'key'
+                - 'key compromise'
+                - 'key rotation'
+                - 'key distribution'
+                - 'key retirement'
+        -
+            action: 'verify all passwords are replaceable'
+            level:
+            mappings:
+                - 'password'
+         -
+            action: 'verify all replaced keys are part of a well-defined process to re-encrypt sensitive data'
+            level:
+            mappings:
+                - 'encryption'
+                - 'sensitive data'
+                - 'key replacement process'
+        -
+            action: ''
+            level:
+            mappings:
+                - 'password'
+    notes: '1) This is going to be trickier for IoT systems; especially if the root of trust for the device ends up having a weakness that is exploitable or the algorithm that is being used is identified as vulnerable after device release. 2) Key and passwords do need to be rotated, but the process for rotating them are very different. This seems to require two different entries in ASVS. 3) Instead of "passwords", should we use the more generic term, "secrets"?'
 -
     chapter_id: V1
     module: Designing a Secure System
@@ -956,11 +1011,13 @@
             level: 
     actions:
         -
-            action: ''
+            action: 'Architecture does not use client-side secrets to protect or access sensitive data'
             level: 
             mappings:
-                -
-    notes: ''
+                - 'client-side'
+                - 'sensitive data'
+                - 'secrets'
+    notes: '1) What about public keys? 2) We need to define secrets somewhere. In some cases, they seem to be separate from cryptomaterial. In other cases, it includes cryptomaterial. We need to define it and use it consistently.'
 -
     chapter_id: V1
     module: Designing a Secure System
